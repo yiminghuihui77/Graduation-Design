@@ -21,7 +21,7 @@ public class CrmMain {
     private static final Logger LOGGER = LoggerFactory.getLogger(CrmMain.class);
 
     public static void main(String[] args) {
-
+        //启动SpringBoot项目
         SpringApplication app = new SpringApplication(CrmMain.class);
         app.run(args);
         LOGGER.info("Crm系统启动 -- " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
