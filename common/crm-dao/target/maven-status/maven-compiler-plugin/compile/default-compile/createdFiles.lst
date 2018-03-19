@@ -1,0 +1,3 @@
+com\cjlu\crm\util\MybatisPlugin.class
+com\cjlu\crm\domain\CrmActivity.class
+com\cjlu\crm\dao\CrmActivityMapper.class
