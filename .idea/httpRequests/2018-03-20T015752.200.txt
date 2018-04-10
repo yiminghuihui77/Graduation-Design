@@ -1,0 +1,1 @@
+CrmActivity(id=1, cusId=1, date=Tue Feb 20 00:00:00 CST 2018, place=开元大酒店, activityDesc=初谈, gmtCreated=Thu Feb 22 20:12:40 CST 2018, gmtModified=Thu Feb 22 22:48:27 CST 2018)

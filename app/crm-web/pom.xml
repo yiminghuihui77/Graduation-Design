@@ -30,10 +30,69 @@
         </dependency>
 
 
-
-
-
     </dependencies>
+
+    <build>
+        <plugins>
+
+            <!--SpringBoot插件：打包成可执行的插件-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!--NodeJS插件-->
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>1.4</version>
+                <configuration>
+                    <!--执行项目中NodeJS和NPM的安装目录-->
+                    <installDirectory>target</installDirectory>
+                    <!--含有package.json的前端静态资源目录-->
+                    <workingDirectory>web-src</workingDirectory>
+                    <!--指定下载的镜像来源-->
+                    <nodeDownloadRoot>http://npm.taobao.org/mirrors/node/</nodeDownloadRoot>
+                    <npmDownloadRoot>http://npm.taobao.org/mirrors/npm/</npmDownloadRoot>
+                </configuration>
+
+                <executions>
+                    <!--安装NodeJS和NPM的执行命令和安装版本-->
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <configuration>
+                            <nodeVersion>v7.4.0</nodeVersion>
+                            <npmVersion>4.0.5</npmVersion>
+                        </configuration>
+                    </execution>
+                    <!--npm安装指令：npm install-->
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <!--npm运行 指令：npm run build-->
+                    <execution>
+                        <id>npm build</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run build</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
 
 
 </project>

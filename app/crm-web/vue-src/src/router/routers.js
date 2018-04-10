@@ -1,9 +1,9 @@
 const routers = [
-  /*{
-    path : '/login.html',
+  {
+    path : '',
     keepAlive : true,
-    component : resolve => require(['../pages/Login.vue'], resolve)
-  },*/
+    component : resolve => require(['../pages/HelloWorld.vue'], resolve)
+  },
   {
     path : '/helloWorld.html',
     keepAlive : true,

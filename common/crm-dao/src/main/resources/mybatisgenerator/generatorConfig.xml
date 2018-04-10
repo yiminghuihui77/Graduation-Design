@@ -41,8 +41,8 @@
 		
 		<!-- 要生成哪些表-->
 
-		<table tableName="crm_activity"
-		    domainObjectName="CrmActivity"
+		<!--<table tableName="crm_chance"
+		    domainObjectName="CrmChance"
 		    enableUpdateByExample="false"
 		    enableUpdateByPrimaryKey="false"
 		    enableDeleteByExample="false"
@@ -53,5 +53,31 @@
 			enableInsert="false">
 			<property name="useActualColumnNames" value="false"/>
 		</table>
+
+		<table tableName="crm_products"
+			   domainObjectName="CrmProducts"
+			   enableUpdateByExample="false"
+			   enableUpdateByPrimaryKey="false"
+			   enableDeleteByExample="false"
+			   enableDeleteByPrimaryKey="false"
+			   enableCountByExample="false"
+			   enableSelectByPrimaryKey="true"
+			   enableSelectByExample="false"
+			   enableInsert="false">
+			<property name="useActualColumnNames" value="false"/>
+		</table>
+
+		<table tableName="crm_customer"
+			   domainObjectName="CrmCustomer"
+			   enableUpdateByExample="false"
+			   enableUpdateByPrimaryKey="false"
+			   enableDeleteByExample="false"
+			   enableDeleteByPrimaryKey="false"
+			   enableCountByExample="false"
+			   enableSelectByPrimaryKey="true"
+			   enableSelectByExample="false"
+			   enableInsert="false">
+			<property name="useActualColumnNames" value="false"/>
+		</table>-->
 	</context>
 </generatorConfiguration>

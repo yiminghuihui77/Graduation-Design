@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>采集辅助平台</title>
+	<title>CRM客户关系管理平台</title>
 	<link rel="stylesheet" href="/app.css">
 </head>
 <body style="background: #f9f9f9">

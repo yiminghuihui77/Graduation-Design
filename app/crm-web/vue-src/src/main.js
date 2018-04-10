@@ -6,9 +6,9 @@ import IView from 'iview'
 import 'iview/dist/styles/iview.css'
 import 'font-awesome/css/font-awesome.min.css'
 import $ from 'jquery'
-import Utils from './src/libs/Utils'
-import ViewPage from './src/components/view-page'
-import Routers from './src/router/routers'
+import Utils from './libs/Utils'
+import ViewPage from './components/view-page'
+import Routers from './router/routers'
 Vue.config.productionTip = false;
 
 //路由
@@ -33,5 +33,13 @@ new Vue({
   el: '#app',
   router,
   components: { ViewPage },
-  template: '<view-page/>'
+  template : '<view-page></view-page>'
 });
+
+/*new Vue({
+  router,
+  components : {ViewPage},
+  data : {
+    eventBus : new Vue()
+  }
+}).$mount('#app');*/

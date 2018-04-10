@@ -6,7 +6,7 @@ package com.cjlu.crm.constants;
  * @author minghui.y
  * @create 2018-03-26 20:18
  **/
-public enum SysCode {
+public enum SysCodeEnum {
     OK(0, "请求成功"),
     ERR_SYS(-1, "系统繁忙"),
     ERR_PARAM(-2, "参数错误");
@@ -15,7 +15,7 @@ public enum SysCode {
     private final int value;
     private final String info;
 
-    SysCode(int value, String info) {
+    SysCodeEnum(int value, String info) {
         this.value = value;
         this.info = info;
     }

@@ -5,6 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -17,6 +19,7 @@ import java.time.format.DateTimeFormatter;
  **/
 @SpringBootApplication
 @MapperScan("com.cjlu.crm.dao")
+//@ServletComponentScan
 public class CrmMain {
     private static final Logger LOGGER = LoggerFactory.getLogger(CrmMain.class);
 
