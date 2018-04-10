@@ -11,4 +11,6 @@ public interface CrmChanceMapper {
     CrmChance selectByPrimaryKey(Integer id);
     List<CrmChance> selectAllChances();
     void deleteById(@Param("id") Integer id);
+    void insertChance(CrmChance chance);
+    void updateChance(CrmChance chance);
 }

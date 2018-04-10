@@ -13,4 +13,6 @@ import java.util.List;
 public interface SaleChanceService {
     List<CrmChance> queryAllChance();
     void removeChance(Integer id);
+    void addChance(CrmChance chance);
+    void updateChance(CrmChance chance);
 }

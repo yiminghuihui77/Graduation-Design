@@ -2,6 +2,8 @@ package com.cjlu.crm.service;
 
 import com.cjlu.crm.domain.CrmProducts;
 
+import java.util.List;
+
 /**
  * 产品服务
  *
@@ -10,4 +12,5 @@ import com.cjlu.crm.domain.CrmProducts;
  **/
 public interface ProductService {
     CrmProducts queryById(Integer id);
+    List<CrmProducts> queryAllProducts();
 }

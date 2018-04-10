@@ -22,4 +22,11 @@
     from crm_products
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="selectAllProducts" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_products
+  </select>
+
 </mapper>

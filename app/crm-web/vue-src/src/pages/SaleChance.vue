@@ -16,7 +16,7 @@
               </FormItem>
 
               <FormItem style="margin-bottom:-8px;" align="center">
-                  <Button type="primary" @click="" icon="ios-loop">重置</Button>
+                  <Button type="primary" @click="refresh" icon="ios-loop">刷新</Button>
                   <Button type="primary" @click="insertShow" icon="ios-plus-outline">新增</Button>
                   <Button type="primary" @click="search" icon="ios-search">查询</Button>
               </FormItem>
@@ -71,16 +71,12 @@
         <Form :model="insertForm" :label-width="80">
           <FormItem label="客户姓名">
             <Select v-model="insertForm.custId" style="width: 300px">
-              <Option value="1">张三</Option>
-              <Option value="2">李四</Option>
-              <Option value="3">王五</Option>
+              <Option v-for="item in custList" :value="item.id" :key="item.id">{{item.cusName}}</Option>
             </Select>
           </FormItem>
           <FormItem label="产品名称">
             <Select v-model="insertForm.prodId" style="width: 300px">
-              <Option value="1">宝马</Option>
-              <Option value="2">奔驰</Option>
-              <Option value="3">大众</Option>
+              <Option v-for="item in prodList" :value="item.id" :key="item.id">{{item.prodName}}</Option>
             </Select>
           </FormItem>
           <FormItem label="购买数量">
@@ -105,12 +101,12 @@
       name: "sale-chance",
       data() {
         return {
-          prodMap :[],
-          custMap : [],
+          prodList :[],
+          custList : [],
           modalTitle : '',
           insertForm : {
-            custId : '',
-            prodId : '',
+            custId : 0,
+            prodId : 0,
             amount : 0,
             chanceDesc : ''
           },
@@ -168,7 +164,11 @@
               title : '创建时间',
               key : 'gmtCreated',
               width : 250,
-              sortable: true
+              sortable: true,
+              //日期格式化
+              render : (h, params) => {
+                return h('div', Utils.strToDateTime(params.row.gmtCreated))
+              }
             },
             {
               title : '操作',
@@ -227,37 +227,48 @@
         }
       },
       methods : {
-        //生成客户、产品Map(供下拉列表使用)
-        generateMap : function () {
-          var me = this;
-          alert(this.saleChanceArr.length);
-          for (var i = 0;i < me.saleChanceArr.length;i++) {
-            var obj = me.saleChanceArr[i];
-            me.custMap[i] = {custId : obj.custId, custName : obj.custName};
-          }
-          // alert(me.custMap);
-        },
         insertShow () {
           var me = this;
-          me.insertForm.custId = '';
-          me.insertForm.prodId = '';
+          me.insertForm.custId = 0;
+          me.insertForm.prodId = 0;
           me.insertForm.amount = 1;
           me.insertForm.chanceDesc = '';
           me.modalTitle = '新增销售机会';
           me.showInsertModal = true
         },
-        //插入销售机会
+        //插入&更新销售机会
         insertChance () {
           var me = this;
-          var params = {
-            custId : me.insertForm.custId,
-            prodId : me.insertForm.prodId,
-            amount : me.insertForm.amount,
-            chanceDesc : me.insertForm.chanceDesc
-          };
-          Utils.post('/api/insertChance.json', params, function (d) {
-
-          })
+          //判断当期是更新操作还是插入操作
+          if (me.modalTitle === '新增销售机会') {
+            var params = {
+              custId : me.insertForm.custId,
+              prodId : me.insertForm.prodId,
+              amount : me.insertForm.amount,
+              chanceDesc : me.insertForm.chanceDesc
+            };
+            Utils.post('/api/insertChance.json', params, function (d) {
+              alert(d);
+            });
+            this.saleChanceArr.push(0);
+          } else if (me.modalTitle === '更新销售机会') {
+            var params = {
+              id : me.saleChanceArr[me.rowIndex].id,
+              custId : me.insertForm.custId,
+              prodId : me.insertForm.prodId,
+              amount : me.insertForm.amount,
+              chanceDesc : me.insertForm.chanceDesc
+            };
+            Utils.post('/api/updateChance.json', params, function (d) {
+              alert(d);
+            });
+          } else {
+            alert('未知操作！');
+          }
+          //重新加载数据
+          this.loadData();
+          //关闭对话框
+          this.showInsertModal = false;
         },
         //模糊查询
         search : function () {
@@ -277,6 +288,8 @@
           Utils.post('/api/queryAllChance.json', {}, function (d) {
             me.total = d.total;
             me.saleChanceArr = d.chanceList;
+            me.custList = d.customerList;
+            me.prodList = d.productList;
           });
           // this.generateMap();
           me.loading = false;
@@ -303,12 +316,11 @@
         },
         update (index) {
           var me = this;
-          alert(me.saleChanceArr[index].custId +'--'+ me.saleChanceArr[index].prodId);
           me.insertForm.custId = me.saleChanceArr[index].custId;
           me.insertForm.prodId = me.saleChanceArr[index].prodId;
           me.insertForm.amount = me.saleChanceArr[index].amount;
           me.insertForm.chanceDesc = me.saleChanceArr[index].chanceDesc;
-
+          me.rowIndex = index;
           me.modalTitle = '更新销售机会';
           me.showInsertModal = true;
         },
@@ -320,6 +332,9 @@
             this.loadData();
           });
           this.showDeleteModal = false;
+        },
+        refresh () {
+          location.reload();
         }
       },
       mounted : function() {

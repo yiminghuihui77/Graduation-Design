@@ -31,4 +31,18 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
 
+  <insert id="insertChance" parameterType="com.cjlu.crm.domain.CrmChance">
+    insert into crm_chance(cust_id, prod_id, amount, chance_desc, gmt_created, gmt_modified)
+    values
+    (#{custId,jdbcType=INTEGER}, #{prodId,jdbcType=INTEGER}, #{amount,jdbcType=INTEGER}, #{chanceDesc,jdbcType=VARCHAR},
+    #{gmtCreated,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP})
+  </insert>
+
+  <update id="updateChance" parameterType="com.cjlu.crm.domain.CrmChance">
+    update crm_chance
+    set cust_id = #{custId,jdbcType=INTEGER}, prod_id = #{prodId,jdbcType=INTEGER}, amount = #{amount,jdbcType=INTEGER},
+        chance_desc = #{chanceDesc,jdbcType=VARCHAR}, gmt_modified =  #{gmtModified,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+  </update>
+
 </mapper>

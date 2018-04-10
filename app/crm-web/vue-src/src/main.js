@@ -29,6 +29,9 @@ Vue.use(IView);
 window.jQuery = window.$ = $;
 window.Utils = Utils;
 
+
+
+//根实例
 new Vue({
   el: '#app',
   router,

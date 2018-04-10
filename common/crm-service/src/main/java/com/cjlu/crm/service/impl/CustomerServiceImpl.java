@@ -6,6 +6,8 @@ import com.cjlu.crm.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author minghui.y
  * @create 2018-04-07 22:00
@@ -19,5 +21,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public CrmCustomer queryById(Integer id) {
         return customerMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public List<CrmCustomer> queryAllCustomers() {
+        return customerMapper.selectAllCustomers();
     }
 }

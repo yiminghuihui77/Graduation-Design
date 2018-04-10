@@ -2,6 +2,8 @@ package com.cjlu.crm.service;
 
 import com.cjlu.crm.domain.CrmCustomer;
 
+import java.util.List;
+
 /**
  * 客户信息服务
  *
@@ -10,4 +12,5 @@ import com.cjlu.crm.domain.CrmCustomer;
  **/
 public interface CustomerService {
     CrmCustomer queryById(Integer id);
+    List<CrmCustomer> queryAllCustomers();
 }

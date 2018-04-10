@@ -26,4 +26,12 @@
     from crm_customer
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="selectAllCustomers" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_customer
+    where status = 'ENABLE'
+  </select>
+
 </mapper>

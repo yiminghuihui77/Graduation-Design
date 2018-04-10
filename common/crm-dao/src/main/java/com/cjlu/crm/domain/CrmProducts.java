@@ -8,7 +8,6 @@ import lombok.experimental.Accessors;
 
 @Data
 @ToString
-@Accessors(chain = true)
 public class CrmProducts {
     /** 主键 */
     private Integer id;

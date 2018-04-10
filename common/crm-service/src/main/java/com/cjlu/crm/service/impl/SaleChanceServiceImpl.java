@@ -27,4 +27,14 @@ public class SaleChanceServiceImpl implements SaleChanceService {
     public void removeChance(Integer id) {
         crmChanceMapper.deleteById(id);
     }
+
+    @Override
+    public void addChance(CrmChance chance) {
+        crmChanceMapper.insertChance(chance);
+    }
+
+    @Override
+    public void updateChance(CrmChance chance) {
+        crmChanceMapper.updateChance(chance);
+    }
 }

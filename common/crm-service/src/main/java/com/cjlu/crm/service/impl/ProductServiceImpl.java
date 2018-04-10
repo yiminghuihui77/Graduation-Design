@@ -6,6 +6,8 @@ import com.cjlu.crm.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author minghui.y
  * @create 2018-04-07 22:04
@@ -19,5 +21,10 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public CrmProducts queryById(Integer id) {
         return productsMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public List<CrmProducts> queryAllProducts() {
+        return productsMapper.selectAllProducts();
     }
 }
