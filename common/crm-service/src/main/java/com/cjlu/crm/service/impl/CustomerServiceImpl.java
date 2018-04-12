@@ -27,4 +27,9 @@ public class CustomerServiceImpl implements CustomerService {
     public List<CrmCustomer> queryAllCustomers() {
         return customerMapper.selectAllCustomers();
     }
+
+    @Override
+    public int changeStatus(Integer id, String status) {
+        return customerMapper.chanceStatusById(id, status);
+    }
 }

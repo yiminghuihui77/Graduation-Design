@@ -291,7 +291,6 @@
             me.custList = d.customerList;
             me.prodList = d.productList;
           });
-          // this.generateMap();
           me.loading = false;
         },
         //导出数据

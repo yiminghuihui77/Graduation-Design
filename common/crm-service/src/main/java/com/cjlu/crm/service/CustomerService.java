@@ -13,4 +13,5 @@ import java.util.List;
 public interface CustomerService {
     CrmCustomer queryById(Integer id);
     List<CrmCustomer> queryAllCustomers();
+    int changeStatus(Integer id, String status);
 }

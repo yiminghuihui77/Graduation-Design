@@ -6,14 +6,14 @@
 				营销管理
 			</template>
 			<Menu-item name="/saleChance.html"><Icon type="ios-crop-strong"></Icon>销售机会管理</Menu-item>
-			<Menu-item name=""><Icon type="ios-crop-strong"></Icon>客户开发计划</Menu-item>
+			<Menu-item name="/customerDevelop.html"><Icon type="ios-crop-strong"></Icon>客户开发计划</Menu-item>
 		</Submenu>
 		<Submenu name="2">
 			<template slot="title">
 				<Icon type="ios-cog"></Icon>
 				客户管理
 			</template>
-			<Menu-item name =""><Icon type="ios-crop-strong"></Icon>客户信息管理</Menu-item>
+			<Menu-item name ="/customerInfo.html"><Icon type="ios-crop-strong"></Icon>客户信息管理</Menu-item>
       <Menu-item name =""><Icon type="ios-crop-strong"></Icon>客户流失监控</Menu-item>
 		</Submenu>
 		<Submenu name="3">

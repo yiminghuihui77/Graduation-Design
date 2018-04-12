@@ -18,6 +18,16 @@ const routers = [
     path : '/saleChance.html',
     keepAlive : true,
     component : resolve => require(['../pages/SaleChance.vue'], resolve)
+  },
+  {
+    path : '/customerDevelop.html',
+    keepAlive : true,
+    component : resolve => require(['../pages/CustomerDevelop.vue'], resolve)
+  },
+  {
+    path : '/customerInfo.html',
+    keepAlive : true,
+    component : resolve => require(['../pages/CustomerInfo.vue'], resolve)
   }
 ];
 export default routers;

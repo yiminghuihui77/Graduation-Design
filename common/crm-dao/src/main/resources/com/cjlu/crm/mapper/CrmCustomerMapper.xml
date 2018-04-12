@@ -31,7 +31,12 @@
     select
     <include refid="Base_Column_List" />
     from crm_customer
-    where status = 'ENABLE'
   </select>
+
+  <update id="chanceStatusById">
+    update crm_customer
+    set status = #{status,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
 
 </mapper>
