@@ -26,7 +26,7 @@
 
               <FormItem style="margin-bottom:-8px;" align="center">
                 <Button type="primary" @click="refresh" icon="ios-loop">刷新</Button>
-                <Button type="primary" @click="modalShow" icon="ios-plus-outline">新增</Button>
+                <Button type="primary" @click="insertModalShow" icon="ios-plus-outline">新增</Button>
                 <Button type="primary" @click="search" icon="ios-search">查询</Button>
               </FormItem>
             </Form>
@@ -99,7 +99,7 @@
           </FormItem>
           <FormItem label="负责经理">
             <Select v-model="insertForm.managerId" style="width: 300px">
-              <Option value="男">男</Option>
+              <Option v-for="item in managerArr" :value="item.id" :key="item.id">{{item.name}}</Option>
             </Select>
           </FormItem>
           <FormItem label="客户等级">
@@ -116,7 +116,7 @@
             <Input v-model="insertForm.region" placeholder="请输入地区.." style="width: 300px"></Input>
           </FormItem>
           <FormItem label="详细地址">
-            <Input v-model="insertForm.place" placeholder="请输入详细地址.."></Input>
+            <Input v-model="insertForm.addr" placeholder="请输入详细地址.."></Input>
           </FormItem>
           <FormItem label="手机号码">
             <Input v-model="insertForm.phone" placeholder="请输入手机号码.." style="width: 300px"></Input>
@@ -153,7 +153,7 @@
           cusLevel : '',
           credit : 0,
           region : '',
-          place : '',
+          addr : '',
           phone : '',
           status : '',
           memo : ''
@@ -201,7 +201,6 @@
         modal_loading : false,
         showDeleteModal : false,
         rowIndex : 0,
-        showDeleteModal : false,
         searchParam : {
           custName : '',
           managerName : '',
@@ -325,7 +324,7 @@
                   },
                   on: {
                     click: () => {
-                      this.update(params.index)
+                      this.updateModalShow(params.index);
                     }
                   }
                 }, 'Update'),
@@ -351,7 +350,8 @@
             }
           }
         ],
-        customerArr : []
+        customerArr : [],
+        managerArr : []
       }
     },
     methods : {
@@ -371,8 +371,8 @@
       refresh : function () {
         location.reload();
       },
-      //弹出对话框
-      modalShow () {
+      //弹出插入对话框
+      insertModalShow () {
         //初始化表单绑定数据
        this.insertForm.cusName = '';
        this.insertForm.sex = '';
@@ -380,13 +380,32 @@
        this.insertForm.cusLevel = '';
        this.insertForm.credit = 0;
        this.insertForm.region = '';
-       this.insertForm.place = '';
+       this.insertForm.addr = '';
        this.insertForm.phone = '';
        this.insertForm.status = '';
        this.insertForm.memo = '';
         //显示对话框
         this.modalTitle = "新增客户信息";
         this.showInsertModal = true;
+      },
+      updateModalShow (index) {
+        var me = this;
+        //记录当前行
+        me.rowIndex = index;
+        //回显数据
+        me.insertForm.cusName = me.customerArr[index].cusName;
+        me.insertForm.sex = me.customerArr[index].sex;
+        me.insertForm.managerId = me.customerArr[index].managerId;
+        me.insertForm.cusLevel = me.customerArr[index].cusLevel;
+        me.insertForm.credit = me.customerArr[index].credit;
+        me.insertForm.region = me.customerArr[index].region;
+        me.insertForm.addr = me.customerArr[index].addr;
+        me.insertForm.phone = me.customerArr[index].phone;
+        me.insertForm.status = me.customerArr[index].status;
+        me.insertForm.memo = me.customerArr[index].memo;
+        //显示对话框
+        me.modalTitle = '修改客户信息';
+        me.showInsertModal = true;
       },
       //模糊查询
       search () {
@@ -418,7 +437,7 @@
       viewShow (index) {
         this.$Modal.info({
           title: '其他信息',
-          content: `地区：${this.customerArr[index].region}<br>详细地址：${this.customerArr[index].addr}<br>手机号码：${this.customerArr[index].phone}<br>备注：${this.customerArr[index].remark}`
+          content: `地区：${this.customerArr[index].region}<br>详细地址：${this.customerArr[index].addr}<br>手机号码：${this.customerArr[index].phone}<br>备注：${this.customerArr[index].memo}`
         });
       },
       activityShow (index) {
@@ -430,6 +449,7 @@
         me.tableLoading = true;
         Utils.post('/api/queryAllCustomer.json', {}, function (d) {
             me.customerArr = d.customerList;
+            me.managerArr = d.managerList;
             me.total = d.total;
         });
         me.tableLoading = false;
@@ -454,6 +474,7 @@
             alert(d);
           });
           me.customerArr.push(0);
+          me.showInsertModal = false;
         } else if (this.modalTitle === '修改客户信息') {
           var params = {
             id : me.customerArr[me.rowIndex].id,
@@ -471,6 +492,7 @@
           Utils.post('/api/refreshCustomer.json', params, function (d) {
             alert(d);
           });
+          me.showInsertModal = false;
         } else {
           alert('未知操作！');
         }

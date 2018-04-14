@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cjlu.crm.dao.CrmDevelopMapper" >
+  <resultMap id="BaseResultMap" type="com.cjlu.crm.domain.CrmDevelop" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="source" property="source" jdbcType="VARCHAR" />
+    <result column="cus_name" property="cusName" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="success_rate" property="successRate" jdbcType="INTEGER" />
+    <result column="develop_desc" property="developDesc" jdbcType="VARCHAR" />
+    <result column="create_id" property="createId" jdbcType="INTEGER" />
+    <result column="due_id" property="dueId" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="gmt_created" property="gmtCreated" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, source, cus_name, phone, address, success_rate, develop_desc, create_id, due_id, 
+    status, gmt_created, gmt_modified
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from crm_develop
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectAllDevelops" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_develop
+  </select>
+  <delete id="deleteDevelopById">
+    delete from crm_develop
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insertDevelop" parameterType="com.cjlu.crm.domain.CrmDevelop">
+    insert into crm_develop(source, cus_name, phone, address, success_rate, develop_desc, create_id, due_id,
+    status, gmt_created, gmt_modified)
+    values (#{source,jdbcType=VARCHAR}, #{cusName,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR},
+            #{successRate,jdbcType=INTEGER},#{developDesc,jdbcType=VARCHAR}, #{createId,jdbcType=INTEGER}, #{dueId,jdbcType=INTEGER},
+            #{status,jdbcType=VARCHAR}, #{gmtCreated,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP})
+  </insert>
+
+  <update id="updateDevelop" parameterType="com.cjlu.crm.domain.CrmDevelop">
+    update crm_develop
+    set source = #{source,jdbcType=VARCHAR},cus_name = #{cusName,jdbcType=VARCHAR}, phone = #{phone,jdbcType=VARCHAR},address = #{address,jdbcType=VARCHAR},
+        success_rate = #{successRate,jdbcType=INTEGER}, develop_desc =#{developDesc,jdbcType=VARCHAR}, create_id = #{createId,jdbcType=INTEGER}, due_id = #{dueId,jdbcType=INTEGER},
+        status = #{status,jdbcType=VARCHAR}, gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -14,4 +14,6 @@ public interface CustomerService {
     CrmCustomer queryById(Integer id);
     List<CrmCustomer> queryAllCustomers();
     int changeStatus(Integer id, String status);
+    int addCustomer(CrmCustomer customer);
+    int refreshCustomer(CrmCustomer customer);
 }

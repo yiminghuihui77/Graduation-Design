@@ -39,4 +39,19 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
+  <insert id="insertCustomer" parameterType="com.cjlu.crm.domain.CrmCustomer">
+    insert into crm_customer(cus_name,sex, region, manager_id, cus_level, credit, addr, phone, memo, status, gmt_created, gmt_modified)
+    values ( #{cusName,jdbcType=VARCHAR},#{sex,jdbcType=VARCHAR},#{region,jdbcType=VARCHAR},#{managerId,jdbcType=INTEGER},#{cusLevel,jdbcType=VARCHAR},
+             #{credit,jdbcType=INTEGER},#{addr,jdbcType=VARCHAR},#{phone,jdbcType=VARCHAR},#{memo,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR},
+             #{gmtCreated,jdbcType=TIMESTAMP},#{gmtModified,jdbcType=TIMESTAMP});
+  </insert>
+
+  <update id="updateCustomer" parameterType="com.cjlu.crm.domain.CrmCustomer">
+    update crm_customer
+    set cus_name = #{cusName,jdbcType=VARCHAR},sex = #{sex,jdbcType=VARCHAR},region = #{region,jdbcType=VARCHAR},manager_id = #{managerId,jdbcType=INTEGER},
+        cus_level = #{cusLevel,jdbcType=VARCHAR}, credit =  #{credit,jdbcType=INTEGER},addr = #{addr,jdbcType=VARCHAR},phone = #{phone,jdbcType=VARCHAR},memo = #{memo,jdbcType=VARCHAR},
+        status = #{status,jdbcType=VARCHAR},gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+  </update>
+
 </mapper>

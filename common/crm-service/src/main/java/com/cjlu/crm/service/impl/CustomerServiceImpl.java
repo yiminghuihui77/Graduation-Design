@@ -32,4 +32,14 @@ public class CustomerServiceImpl implements CustomerService {
     public int changeStatus(Integer id, String status) {
         return customerMapper.chanceStatusById(id, status);
     }
+
+    @Override
+    public int addCustomer(CrmCustomer customer) {
+        return customerMapper.insertCustomer(customer);
+    }
+
+    @Override
+    public int refreshCustomer(CrmCustomer customer) {
+        return customerMapper.updateCustomer(customer);
+    }
 }

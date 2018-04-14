@@ -6,6 +6,8 @@ import com.cjlu.crm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author minghui.y
  * @create 2018-04-11 16:36
@@ -19,5 +21,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public CrmUser queryUserById(Integer id) {
         return userMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public List<CrmUser> queryAllManagers() {
+        return userMapper.selectAllManagers();
+    }
+
+    @Override
+    public List<CrmUser> queryAllSaleCharges() {
+        return userMapper.selectAllSaleCharges();
     }
 }

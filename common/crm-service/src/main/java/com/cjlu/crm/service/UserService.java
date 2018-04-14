@@ -2,6 +2,8 @@ package com.cjlu.crm.service;
 
 import com.cjlu.crm.domain.CrmUser;
 
+import java.util.List;
+
 /**
  * 用户服务
  *
@@ -10,4 +12,6 @@ import com.cjlu.crm.domain.CrmUser;
  **/
 public interface UserService {
     CrmUser queryUserById(Integer id);
+    List<CrmUser> queryAllManagers();
+    List<CrmUser> queryAllSaleCharges();
 }

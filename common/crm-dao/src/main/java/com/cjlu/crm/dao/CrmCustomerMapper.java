@@ -13,4 +13,8 @@ public interface CrmCustomerMapper {
     List<CrmCustomer> selectAllCustomers();
 
     int chanceStatusById(@Param("id") Integer id, @Param("status") String status);
+
+    int insertCustomer(CrmCustomer customer);
+
+    int updateCustomer(CrmCustomer customer);
 }

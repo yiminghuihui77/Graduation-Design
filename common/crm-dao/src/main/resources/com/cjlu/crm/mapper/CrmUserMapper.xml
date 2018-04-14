@@ -19,4 +19,18 @@
     from crm_user
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="selectAllManagers" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_user
+    where role_id = 2;
+  </select>
+
+  <select id="selectAllSaleCharges" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_user
+    where role_id = 3;
+  </select>
 </mapper>
