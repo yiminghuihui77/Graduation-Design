@@ -22,4 +22,9 @@ public class ActivityServiceImpl implements ActivityService {
     public List<CrmActivity> queryByCustId(Integer id) {
         return activityMapper.selectByCustId(id);
     }
+
+    @Override
+    public int addActivity(CrmActivity activity) {
+        return activityMapper.insertActivity(activity);
+    }
 }

@@ -10,4 +10,6 @@ public interface CrmActivityMapper {
     CrmActivity selectByPrimaryKey(Integer id);
 
     List<CrmActivity> selectByCustId(Integer id);
+
+    int insertActivity(CrmActivity activity);
 }

@@ -26,4 +26,10 @@
     from crm_activity
     where cus_id = #{cusId,jdbcType=INTEGER}
   </select>
+
+  <insert id="insertActivity" parameterType="com.cjlu.crm.domain.CrmActivity">
+    insert into crm_activity(cus_id, date, place, activity_desc, gmt_created, gmt_modified)
+    values (#{cusId,jdbcType=INTEGER}, #{date,jdbcType=TIMESTAMP}, #{place,jdbcType=VARCHAR},
+            #{activityDesc,jdbcType=VARCHAR}, #{gmtCreated,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP})
+  </insert>
 </mapper>

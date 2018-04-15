@@ -78,6 +78,28 @@
             </div>
           </div>
         </div>
+        <Button type="success" @click="activityModalShow" long>新增</Button>
+      </Modal>
+      <!--新增交往记录-->
+      <Modal  title="新增交往记录" v-model="showInsertActivity" width="650">
+        <Form :model="insertActivityForm" :label-width="80">
+          <FormItem label="客户姓名">
+            <Input :value="customerArr[rowIndex].cusName"  style="width: 200px" disabled></Input>
+          </FormItem>
+          <FormItem label="交往日期">
+            <DatePicker v-model="insertActivityForm.date" type="datetime" placeholder="请选择交往日期" style="width: 200px"></DatePicker>
+          </FormItem>
+          <FormItem label="交往地点">
+            <Input v-model="insertActivityForm.place" placeholder="请输入交往地点.." style="width: 500px"></Input>
+          </FormItem>
+          <FormItem label="交往描述">
+            <Input v-model="insertActivityForm.desc" type="textarea" :rows="6" placeholder="请输入交往描述.."></Input>
+          </FormItem>
+        </Form>
+        <div slot="footer" align="center">
+          <Button type="primary" size="large" @click="saveActivity">保存</Button>
+          <Button type="primary" size="large" @click="showInsertActivity = false">关闭</Button>
+        </div>
       </Modal>
 
       <!--新增/更新客户-->
@@ -146,6 +168,12 @@
     name: "customer-info",
     data () {
       return {
+        insertActivityForm : {
+          date :null,
+          place : '',
+          desc : ''
+        },
+        showInsertActivity : false,
         insertForm : {
           cusName : '',
           sex : '',
@@ -443,6 +471,7 @@
       activityShow (index) {
         this.custActivity = this.customerArr[index].activityList;
         this.showActivity = true;
+        this.rowIndex = index;
       },
       loadCustomers : function () {
         var me = this;
@@ -496,6 +525,28 @@
         } else {
           alert('未知操作！');
         }
+      },
+      activityModalShow () {
+        var me = this;
+        //对话框切换
+        me.showActivity = false;
+        me.showInsertActivity = true;
+      },
+      //新增交往记录
+      saveActivity () {
+        var me = this;
+        var params = {
+          cusId : me.customerArr[me.rowIndex].id,
+          date : me.insertActivityForm.date,
+          place : me.insertActivityForm.place,
+          activityDesc : me.insertActivityForm.desc
+        };
+        Utils.post('/api/addActivity.json', params, function (d) {
+          alert(d);
+        });
+        //关闭对话框
+        me.showInsertActivity = false;
+        me.refresh();
       }
 
     },

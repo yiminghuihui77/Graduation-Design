@@ -12,4 +12,5 @@ import java.util.List;
  **/
 public interface ActivityService {
     List<CrmActivity> queryByCustId(Integer id);
+    int addActivity(CrmActivity activity);
 }

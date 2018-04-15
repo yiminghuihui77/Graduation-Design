@@ -104,8 +104,8 @@
 			   enableInsert="false">
 			<property name="useActualColumnNames" value="false"/>
 		</table>-->
-		<table tableName="crm_develop"
-			   domainObjectName="CrmDevelop"
+		<table tableName="crm_loss"
+			   domainObjectName="CrmLoss"
 			   enableUpdateByExample="false"
 			   enableUpdateByPrimaryKey="false"
 			   enableDeleteByExample="false"
