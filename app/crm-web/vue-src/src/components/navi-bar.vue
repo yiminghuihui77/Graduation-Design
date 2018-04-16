@@ -14,7 +14,7 @@
 				客户管理
 			</template>
 			<Menu-item name ="/customerInfo.html"><Icon type="ios-crop-strong"></Icon>客户信息管理</Menu-item>
-      <Menu-item name =""><Icon type="ios-crop-strong"></Icon>客户流失监控</Menu-item>
+      <Menu-item name ="/customerLoss.html"><Icon type="ios-crop-strong"></Icon>客户流失监控</Menu-item>
 		</Submenu>
 		<Submenu name="3">
 			<template slot="title">

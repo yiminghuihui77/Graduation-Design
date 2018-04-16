@@ -18,4 +18,16 @@
     from crm_loss
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="selectAllLoss" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_loss
+  </select>
+
+  <delete id="deleteLossById">
+    delete from crm_loss
+    where id = #{id, jdbcType=INTEGER}
+  </delete>
+
 </mapper>
