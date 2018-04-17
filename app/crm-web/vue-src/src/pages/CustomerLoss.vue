@@ -112,8 +112,8 @@
             custList : [],
             insertForm : {
               custId : 0,
-              lastContactTime : null,
-              confirmLossTime : null,
+              lastContactTime : new Date(),
+              confirmLossTime : new Date(),
               status : 0,
               remark : ''
             },
@@ -229,8 +229,8 @@
           me.modalTitle = '添加客户流失记录';
           //清除数据
           me.insertForm.custId = 0;
-          me.insertForm.lastContactTime = null;
-          me.insertForm.confirmLossTime = null;
+          me.insertForm.lastContactTime = new Date();
+          me.insertForm.confirmLossTime = new Date();
           me.insertForm.status = 0;
           me.insertForm.remark = '';
           me.showInsertModal = true;
@@ -292,6 +292,34 @@
         },
         //插入or更新
         saveLoss () {
+          var me = this;
+          if (me.modalTitle === '添加客户流失记录') {
+            var params = {
+              custId : me.insertForm.custId,
+              lastContactTime : me.insertForm.lastContactTime,
+              confirmLossTime : me.insertForm.confirmLossTime,
+              status : me.insertForm.status,
+              remark : me.insertForm.remark
+            };
+            Utils.post('/api/addLoss.json', params, function (d) {
+              alert(d);
+            });
+            me.custLossArr.push(0);
+            me.refresh();
+          } else if (me.modalTitle === '修改客户流失记录') {
+            var params = {
+              id : me.custLossArr[me.rowIndex].id,
+              custId : me.insertForm.custId,
+              lastContactTime : me.insertForm.lastContactTime,
+              confirmLossTime : me.insertForm.confirmLossTime,
+              status : me.insertForm.status,
+              remark : me.insertForm.remark
+            };
+            Utils.post('/api/updateLoss.json', params, function (d) {
+              alert(d);
+            });
+            me.refresh();
+          }
 
         },
         updateModalShow(index) {
@@ -304,6 +332,9 @@
           me.insertForm.status = me.custLossArr[index].status + '';
           me.insertForm.remark = me.custLossArr[index].remark;
           me.showInsertModal = true;
+          me.rowIndex = index;
+          //日期回显小时部分不对
+          // alert(me.custLossArr[index].lastContactTime + '---' + me.custLossArr[index].confirmLossTime);
         }
 
       },

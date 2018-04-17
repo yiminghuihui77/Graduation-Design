@@ -13,4 +13,6 @@ import java.util.List;
 public interface LossService {
     List<CrmLoss> queryAllLoss();
     int removeLoss(Integer id);
+    int addLoss(CrmLoss loss);
+    int refreshLoss(CrmLoss loss);
 }

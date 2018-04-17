@@ -11,4 +11,6 @@ public interface CrmLossMapper {
     CrmLoss selectByPrimaryKey(Integer id);
     List<CrmLoss> selectAllLoss();
     int deleteLossById(@Param("id") Integer id);
+    int insertLoss(CrmLoss loss);
+    int updateLoss(CrmLoss loss);
 }

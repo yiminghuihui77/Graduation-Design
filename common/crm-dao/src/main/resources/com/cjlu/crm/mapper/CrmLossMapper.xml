@@ -30,4 +30,16 @@
     where id = #{id, jdbcType=INTEGER}
   </delete>
 
+  <insert id="insertLoss" parameterType="com.cjlu.crm.domain.CrmLoss">
+    insert into crm_loss(cust_id, last_contact_time, confirm_loss_time, status, remark)
+    values (#{custId,jdbcType=INTEGER}, #{lastContactTime, jdbcType=TIMESTAMP},#{confirmLossTime, jdbcType=TIMESTAMP},#{status, jdbcType=INTEGER},#{remark, jdbcType=VARCHAR})
+  </insert>
+
+  <update id="updateLoss" parameterType="com.cjlu.crm.domain.CrmLoss">
+    update crm_loss
+    set cust_id = #{custId,jdbcType=INTEGER}, last_contact_time = #{lastContactTime, jdbcType=TIMESTAMP}, confirm_loss_time = #{confirmLossTime, jdbcType=TIMESTAMP},
+        status = #{status, jdbcType=INTEGER}, remark = #{remark, jdbcType=VARCHAR}
+    where id = #{id, jdbcType=INTEGER}
+  </update>
+
 </mapper>

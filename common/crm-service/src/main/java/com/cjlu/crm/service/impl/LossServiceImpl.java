@@ -27,4 +27,14 @@ public class LossServiceImpl implements LossService {
     public int removeLoss(Integer id) {
         return lossMapper.deleteLossById(id);
     }
+
+    @Override
+    public int addLoss(CrmLoss loss) {
+        return lossMapper.insertLoss(loss);
+    }
+
+    @Override
+    public int refreshLoss(CrmLoss loss) {
+        return lossMapper.updateLoss(loss);
+    }
 }

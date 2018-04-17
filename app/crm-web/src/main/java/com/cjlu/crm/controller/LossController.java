@@ -7,6 +7,7 @@ import com.cjlu.crm.domain.LossDTO;
 import com.cjlu.crm.domain.Result;
 import com.cjlu.crm.service.CustomerService;
 import com.cjlu.crm.service.LossService;
+import com.mysql.jdbc.jdbc2.optional.SuspendableXAConnection;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -124,5 +125,25 @@ public class LossController {
             return new Result<Map>(SysCodeEnum.OK.getValue(), data);
         }
         return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "模糊查询客户流失记录失败！");
+    }
+
+
+    @RequestMapping("/addLoss.json")
+    public Result addLoss(CrmLoss loss) {
+        LOGGER.info("添加客户流失记录--------");
+        //插入
+        if (lossService.addLoss(loss) <= 0) {
+            return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "添加客户流失记录失败！");
+        }
+        return new Result<>(SysCodeEnum.OK.getValue(), "添加客户流失记录成功！");
+    }
+
+    @RequestMapping("/updateLoss.json")
+    public Result updateLoss(CrmLoss loss) {
+        LOGGER.info("修改客户流失记录--------");
+        if (lossService.refreshLoss(loss) <= 0) {
+            return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "修改客户流失记录失败！");
+        }
+        return new Result<>(SysCodeEnum.OK.getValue(), "修改客户流失记录成功！");
     }
 }
