@@ -21,9 +21,9 @@
 				<Icon type="monitor"></Icon>
 				服务管理
 			</template>
-			<Menu-item name=""><Icon type="ios-crop-strong"></Icon>创建服务</Menu-item>
-      <Menu-item name =""><Icon type="ios-crop-strong"></Icon>处理服务</Menu-item>
-			<Menu-item name=""><Icon type="ios-crop-strong"></Icon>归档服务</Menu-item>
+			<Menu-item name="/createService.html"><Icon type="ios-crop-strong"></Icon>创建服务</Menu-item>
+      <Menu-item name ="/processService.html"><Icon type="ios-crop-strong"></Icon>处理服务</Menu-item>
+			<Menu-item name="/archiveService.html"><Icon type="ios-crop-strong"></Icon>归档服务</Menu-item>
 		</Submenu>
 		<Submenu name="4">
 			<template slot="title">

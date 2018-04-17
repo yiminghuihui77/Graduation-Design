@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cjlu.crm.dao.CrmServiceMapper" >
+  <resultMap id="BaseResultMap" type="com.cjlu.crm.domain.CrmService" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="service_desc" property="serviceDesc" jdbcType="VARCHAR" />
+    <result column="due_id" property="dueId" jdbcType="INTEGER" />
+    <result column="cust_id" property="custId" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="star_level" property="starLevel" jdbcType="INTEGER" />
+    <result column="gmt_created" property="gmtCreated" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, type, service_desc, due_id, cust_id, status, remark, star_level, gmt_created, 
+    gmt_modified
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from crm_service
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <insert id="insertService" parameterType="com.cjlu.crm.domain.CrmService">
+    insert into crm_service(type, service_desc, due_id, cust_id,gmt_created, gmt_modified)
+    values (#{type,jdbcType=INTEGER}, #{serviceDesc,jdbcType=VARCHAR},#{dueId,jdbcType=INTEGER},#{custId,jdbcType=INTEGER},
+           #{gmtCreated,jdbcType=TIMESTAMP},#{gmtModified,jdbcType=TIMESTAMP})
+  </insert>
+
+  <select id="selectAllService" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_service
+  </select>
+
+  <update id="updateRemarkById">
+    update crm_service
+    set remark = #{remark, jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectArchiveService" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_service
+    where remark is not null
+  </select>
+
+  <update id="archiveService">
+    update crm_service
+    set status = 1, star_level = #{starLevel,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+</mapper>
