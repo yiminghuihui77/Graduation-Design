@@ -30,9 +30,8 @@
 				<Icon type="speakerphone"></Icon>
 				统计报表
 			</template>
-			<Menu-item name =""><Icon type="ios-crop-strong"></Icon>客户贡献统计</Menu-item>
-			<Menu-item name =""><Icon type="ios-crop-strong"></Icon>客户流失统计</Menu-item>
-			<Menu-item name = ""><Icon type="ios-crop-strong"></Icon>服务概况统计</Menu-item>
+			<Menu-item name ="/contributionAnalyze.html"><Icon type="ios-crop-strong"></Icon>客户贡献统计</Menu-item>
+			<Menu-item name = "/serviceAnalyze.html"><Icon type="ios-crop-strong"></Icon>服务概况统计</Menu-item>
 		</Submenu>
 
 	</Menu>

@@ -48,6 +48,16 @@ const routers = [
     path : "/archiveService.html",
     keepAlive : true,
     component : resolve => require(['../pages/ServiceArchive.vue'], resolve)
+  },
+  {
+    path : '/contributionAnalyze.html',
+    keepAlive : true,
+    component : resolve => require(['../pages/ContributionAnalyze.vue'], resolve)
+  },
+  {
+    path : '/serviceAnalyze.html',
+    keepAlive : true,
+    component : resolve => require(['../pages/ServiceAnalyze.vue'], resolve)
   }
 ];
 export default routers;
