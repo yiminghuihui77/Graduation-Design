@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7513ed75-14d8-4f44-9809-d94670f9fab9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceDTO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceArchive.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceProcess.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/ServeServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/navi-bar.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/navi-bar.vue" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" />
-      <change beforePath="$PROJECT_DIR$/common/crm-dao/src/main/resources/mybatisgenerator/generatorConfig.xml" afterPath="$PROJECT_DIR$/common/crm-dao/src/main/resources/mybatisgenerator/generatorConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceArchive.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceArchive.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ServiceController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServiceController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+            <state relative-caret-position="440">
+              <caret line="251" column="49" lean-forward="false" selection-start-line="251" selection-start-column="49" selection-end-line="251" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceArchive.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ServiceArchive.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceArchive.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="139" column="17" lean-forward="false" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
+            <state relative-caret-position="381">
+              <caret line="211" column="38" lean-forward="false" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#article#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#Select#0;n#FormItem#1;n#Form#0;n#Card#0;n#div#0;n#div#0;n#article#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -140,8 +132,8 @@
         <option value="$PROJECT_DIR$/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmServiceMapper.xml" />
         <option value="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java" />
         <option value="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/ServeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceArchive.vue" />
+        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java" />
       </list>
     </option>
   </component>
@@ -599,8 +591,8 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -881,12 +873,13 @@
       <workItem from="1523936718556" duration="44000" />
       <workItem from="1523945380734" duration="698000" />
       <workItem from="1523947638983" duration="12529000" />
-      <workItem from="1523969684868" duration="11905000" />
+      <workItem from="1523969684868" duration="12129000" />
+      <workItem from="1524016093513" duration="2024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232227000" />
+    <option name="totallyTimeSpent" value="234475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -908,8 +901,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40638298" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40638298" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287234" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27872342" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30625" sideWeight="0.5058997" order="0" side_tool="true" content_ui="tabs" />
@@ -968,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,12 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#756#757#0" expanded="false" />
-            <element signature="e#812#813#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,11 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <marker date="1523716479800" expanded="true" signature="982:1086" ph="select from crm_user" />
-            <marker date="1523716479800" expanded="true" signature="1164:1251" ph="select from crm_user" />
-            <marker date="1523716479800" expanded="true" signature="1333:1420" ph="select from crm_user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,17 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="37" column="50" lean-forward="false" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#601#602#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-            <element signature="e#784#785#0" expanded="false" />
-            <element signature="e#843#844#0" expanded="false" />
-            <element signature="e#910#911#0" expanded="false" />
-            <element signature="e#969#970#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,13 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding>
-            <marker date="1523721463179" expanded="true" signature="1417:1524" ph="select from crm_develop" />
-            <marker date="1523721463179" expanded="true" signature="1602:1670" ph="select from crm_develop" />
-            <marker date="1523721463179" expanded="true" signature="1721:1782" ph="delete from crm_develop... " />
-            <marker date="1523721463179" expanded="true" signature="1877:2387" ph="insert into crm_develop... " />
-            <marker date="1523721463179" expanded="true" signature="2482:2970" ph="update crm_develop... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,11 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="30" column="90" lean-forward="false" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
-          <folding>
-            <marker date="1523768617851" expanded="true" signature="1000:1108" ph="select from crm_activity" />
-            <marker date="1523768617851" expanded="true" signature="1183:1297" ph="select from crm_activity" />
-            <marker date="1523768617851" expanded="true" signature="1394:1690" ph="insert into crm_activity... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,10 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-          <folding>
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#744#745#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,13 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding>
-            <marker date="1523930788858" expanded="true" signature="937:1041" ph="select from crm_loss" />
-            <marker date="1523930788858" expanded="true" signature="1115:1180" ph="select from crm_loss" />
-            <marker date="1523930788858" expanded="true" signature="1229:1288" ph="delete from crm_loss... " />
-            <marker date="1523930788858" expanded="true" signature="1377:1635" ph="insert into crm_loss... " />
-            <marker date="1523930788858" expanded="true" signature="1724:2027" ph="update crm_loss... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1172,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1180,14 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#673#674#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#835#836#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,7 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,7 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1276,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1284,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="293" column="29" lean-forward="true" selection-start-line="293" selection-start-column="29" selection-end-line="293" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1292,9 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="689">
           <caret line="112" column="90" lean-forward="true" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#Select#0;n#FormItem#1;n#Form#0;n#Card#0;n#div#0;n#div#0;n#article#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1302,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1337,15 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="53" column="62" lean-forward="true" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
-          <folding>
-            <marker date="1523978326054" expanded="true" signature="1242:1349" ph="select from crm_service" />
-            <marker date="1523978326054" expanded="true" signature="1444:1733" ph="insert into crm_service... " />
-            <marker date="1523978326054" expanded="true" signature="1810:1824" ph="select from crm_service" />
-            <marker date="1523978326054" expanded="true" signature="1810:1878" ph="select from crm_service" />
-            <marker date="1523978326054" expanded="true" signature="1929:2030" ph="update crm_service... " />
-            <marker date="1523978326054" expanded="true" signature="2111:2208" ph="select from crm_service" />
-            <marker date="1523978326054" expanded="true" signature="2257:2376" ph="update crm_service... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1353,9 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1363,14 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="e#795#796#0" expanded="false" />
-            <element signature="e#860#861#0" expanded="false" />
-            <element signature="e#927#928#0" expanded="false" />
-            <element signature="e#986#987#0" expanded="false" />
-            <element signature="e#1064#1065#0" expanded="false" />
-            <element signature="e#1130#1131#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1378,7 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1386,27 +1291,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="134" column="53" lean-forward="true" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceArchive.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="139" column="17" lean-forward="false" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
+        <state relative-caret-position="381">
+          <caret line="211" column="38" lean-forward="false" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#article#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#Select#0;n#FormItem#1;n#Form#0;n#Card#0;n#div#0;n#div#0;n#article#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="251" column="49" lean-forward="false" selection-start-line="251" selection-start-column="49" selection-end-line="251" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

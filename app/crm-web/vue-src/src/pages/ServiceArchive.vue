@@ -211,7 +211,7 @@
             custName : me.searchParam.custName,
             type : me.searchParam.type
           };
-          Utils.post('/api/serviceFuzzyQuery.json', params, function (d) {
+          Utils.post('/api/archiveFuzzyQuery.json', params, function (d) {
             me.serviceArr = d.serviceList;
             me.total = d.total;
           });

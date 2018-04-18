@@ -208,4 +208,65 @@ public class ServiceController {
         return new Result<>(SysCodeEnum.OK.getValue(), "服务归档成功！");
     }
 
+    @RequestMapping("/archiveFuzzyQuery.json")
+    public Result archiveFuzzyQuery(@RequestParam(value = "custName", required = false)String custName,
+                                    @RequestParam(value = "type", required = false) Integer type) {
+        LOGGER.info("归档服务模糊查询---------");
+        List<CrmService> services = serveService.queryArchiveService();
+        if (CollectionUtils.isEmpty(services)) {
+            return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "查询服务失败！");
+        }
+        //转换成DTO
+        List<ServiceDTO> serviceDTOList = new ArrayList<>(services.size());
+        services.forEach(x -> {
+            ServiceDTO dto = new ServiceDTO();
+            BeanUtils.copyProperties(x, dto);
+            //设置客户姓名
+            CrmCustomer customer = customerService.queryById(x.getCustId());
+            if (customer != null) {
+                dto.setCustName(customer.getCusName());
+            }
+            //设置客户经理性命跟
+            CrmUser user = userService.queryUserById(x.getDueId());
+            if (user != null) {
+                dto.setDueName(user.getName());
+            }
+            serviceDTOList.add(dto);
+        });
+        //过滤
+        if (StringUtils.isNotEmpty(custName) && type != null) {
+            List<ServiceDTO> fiinalList = serviceDTOList.stream()
+                    .filter(x -> x.getCustName().contains(custName))
+                    .filter(x -> x.getType().intValue() == type.intValue())
+                    .collect(Collectors.toList());
+            Map<Object, Object> data = new HashMap<>();
+            data.put("serviceList", fiinalList);
+            data.put("total", fiinalList.size());
+            return new Result<Map>(SysCodeEnum.OK.getValue(), data);
+        } else if (StringUtils.isNotEmpty(custName)) {
+            List<ServiceDTO> fiinalList = serviceDTOList.stream()
+                    .filter(x -> x.getCustName().contains(custName))
+                    .collect(Collectors.toList());
+            Map<Object, Object> data = new HashMap<>();
+            data.put("serviceList", fiinalList);
+            data.put("total", fiinalList.size());
+            return new Result<Map>(SysCodeEnum.OK.getValue(), data);
+        } else if (type != null) {
+            List<ServiceDTO> fiinalList = serviceDTOList.stream()
+                    .filter(x -> x.getType().intValue() == type.intValue())
+                    .collect(Collectors.toList());
+            Map<Object, Object> data = new HashMap<>();
+            data.put("serviceList", fiinalList);
+            data.put("total", fiinalList.size());
+            return new Result<Map>(SysCodeEnum.OK.getValue(), data);
+        }
+
+        //存储数据
+        Map<Object, Object> data = new HashMap<>();
+        data.put("serviceList", serviceDTOList);
+        data.put("total", serviceDTOList.size());
+        return new Result<Map>(SysCodeEnum.OK.getValue(), data);
+
+    }
+
 }
