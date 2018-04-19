@@ -5,14 +5,9 @@ const routers = [
     component : resolve => require(['../pages/HelloWorld.vue'], resolve)
   },
   {
-    path : '/helloWorld.html',
+    path : '/login.html',
     keepAlive : true,
-    component : resolve => require(['../pages/HelloWorld.vue'], resolve)
-  },
-  {
-    path : '/index.html',
-    keepAlive : true,
-    component : resolve => require(['../components/view-page.vue'], resolve)
+    component : resolve => require(['../pages/Login.vue'], resolve)
   },
   {
     path : '/saleChance.html',

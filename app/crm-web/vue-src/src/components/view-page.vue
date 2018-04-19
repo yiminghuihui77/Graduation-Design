@@ -1,5 +1,5 @@
 <template>
-	<div id="viewPage">
+	<div id="viewpage">
 		<title-bar></title-bar>
 
 		<div class="layout">

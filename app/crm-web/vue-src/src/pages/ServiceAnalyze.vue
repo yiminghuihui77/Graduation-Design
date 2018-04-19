@@ -44,6 +44,16 @@
         </div>
       </div>
 
+      <!--交往记录-->
+      <Modal  title="服务记录" v-model="showService" width="850">
+        <div class="ivu-row example-vertical">
+          <div class="ivu-col ivu-col-span-24">
+            <div class="example-case" >
+              <Table :columns="columnsService" :data="serviceHistory"></Table>
+            </div>
+          </div>
+        </div>
+      </Modal>
 
     </article>
   </div>
@@ -54,6 +64,55 @@
         name: "service-analyze",
       data () {
           return {
+            serviceHistory : [],
+            columnsService : [
+              {
+                title : '服务类型',
+                width : 150,
+                key : 'type',
+                render : (h, params) => {
+                  if (params.row.type === -1) {
+                    return h('div', '建议');
+                  } else if (params.row.type === 0) {
+                    return h('div', '咨询');
+                  } else if (params.row.type === 1) {
+                    return h('div', '投诉');
+                  }
+                }
+              },
+              {
+                title : '负责经理',
+                width : 180,
+                key : 'dueName'
+              },
+              {
+                title : '服务请求',
+                width : 380,
+                key : 'serviceDesc'
+              },
+              {
+                title : '创建时间',
+                width : 200,
+                key : 'gmtCreated',
+                //日期格式化
+                render : (h, params) => {
+                  return h('div', Utils.strToDateTime(params.row.gmtCreated))
+                },
+              },
+              {
+                title : '服务状态',
+                width : 150,
+                key : 'status',
+                render : (h, params) => {
+                  if (params.row.status === 0) {
+                    return h('div', '处理中');
+                  } else if (params.row.status === 1) {
+                    return h('div', '已归档');
+                  }
+                }
+              }
+            ],
+            showService : false,
             searchParam : {
               custName : '',
               prodName : ''
@@ -88,7 +147,7 @@
                 title : '服务次数',
                 width : 150,
                 align: 'center',
-                key : 'purchaseCount'
+                key : 'serviceCount'
               },
               {
                 title : '查看详情',
@@ -110,7 +169,7 @@
                         this.showServiceHistory(params.index)
                       }
                     }
-                  }, '交易历史');
+                  }, '服务历史');
                 }
               }
             ],
@@ -138,8 +197,23 @@
 
         },
         showServiceHistory (index) {
-
+          var me = this;
+          me.serviceHistory = me.serviceArr[index].serviceHistory;
+          me.showService = true;
+        },
+        //加载数据
+        loadData() {
+          var me = this;
+          me.tableLoading = true;
+          Utils.post('/api/queryServiceAnalyze.json', {}, function (d) {
+            me.serviceArr = d.serviceAnalyzeList;
+            me.total = d.total;
+          });
+          me.tableLoading = false;
         }
+      },
+      mounted : function() {
+        this.loadData();
       }
     }
 </script>

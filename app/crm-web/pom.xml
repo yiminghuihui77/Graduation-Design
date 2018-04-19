@@ -45,15 +45,15 @@
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
-                <version>1.4</version>
+                <version>1.0</version>
                 <configuration>
                     <!--执行项目中NodeJS和NPM的安装目录-->
                     <installDirectory>target</installDirectory>
                     <!--含有package.json的前端静态资源目录-->
-                    <workingDirectory>web-src</workingDirectory>
+                    <workingDirectory>vue-src</workingDirectory>
                     <!--指定下载的镜像来源-->
-                    <nodeDownloadRoot>http://npm.taobao.org/mirrors/node/</nodeDownloadRoot>
-                    <npmDownloadRoot>http://npm.taobao.org/mirrors/npm/</npmDownloadRoot>
+                    <!--<nodeDownloadRoot>http://npm.taobao.org/mirrors/node/</nodeDownloadRoot>
+                    <npmDownloadRoot>http://npm.taobao.org/mirrors/npm/</npmDownloadRoot>-->
                 </configuration>
 
                 <executions>

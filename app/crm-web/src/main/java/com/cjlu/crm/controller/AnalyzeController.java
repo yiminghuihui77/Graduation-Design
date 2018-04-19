@@ -2,13 +2,12 @@ package com.cjlu.crm.controller;
 
 import com.cjlu.crm.constants.SysCodeEnum;
 import com.cjlu.crm.domain.*;
-import com.cjlu.crm.service.CustomerService;
-import com.cjlu.crm.service.ProductService;
-import com.cjlu.crm.service.SaleChanceService;
+import com.cjlu.crm.service.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,6 +35,10 @@ public class AnalyzeController {
     private CustomerService customerService;
     @Autowired
     private ProductService productService;
+    @Autowired
+    private ServeService serveService;
+    @Autowired
+    private UserService userService;
 
     @RequestMapping("/queryContribution.json")
     public Result queryContribution() {
@@ -85,6 +88,53 @@ public class AnalyzeController {
         Map<Object, Object> data = new HashMap<>();
         data.put("contributionList", contributionDTOList);
         data.put("total", contributionDTOList.size());
+        return new Result<Map>(SysCodeEnum.OK.getValue(), data);
+    }
+
+
+
+    @RequestMapping("/queryServiceAnalyze.json")
+    public Result queryServiceAnalyze() {
+        LOGGER.info("查询服务分析结果------");
+        List<CrmService> services = serveService.queryAllService();
+        if (CollectionUtils.isEmpty(services)) {
+            return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "查询服务失败！");
+        }
+        //转换成DTO
+        List<ServiceDTO> serviceDTOList = new ArrayList<>(services.size());
+        services.forEach(x -> {
+            ServiceDTO dto = new ServiceDTO();
+            BeanUtils.copyProperties(x, dto);
+            //设置客户姓名
+            CrmCustomer customer = customerService.queryById(x.getCustId());
+            if (customer != null) {
+                dto.setCustName(customer.getCusName());
+            }
+            //设置客户经理性命跟
+            CrmUser user = userService.queryUserById(x.getDueId());
+            if (user != null) {
+                dto.setDueName(user.getName());
+            }
+            serviceDTOList.add(dto);
+        });
+        //按照客户id分组
+        Map<Integer, List<ServiceDTO>> group = serviceDTOList.stream()
+                .collect(Collectors.groupingBy(x -> x.getCustId()));
+        //生成分析结果
+        List<ServiceAnalyzeDTO> analyzeDTOs = new ArrayList<>();
+        group.forEach((key, value) -> {
+            ServiceAnalyzeDTO dto = new ServiceAnalyzeDTO();
+            dto.setCustId(key);
+            dto.setCustName(value.get(0).getCustName());
+            dto.setServiceCount(value.size());
+            dto.setServiceHistory(value);
+            analyzeDTOs.add(dto);
+        });
+
+        //返回数据
+        Map<Object, Object> data = new HashMap<>();
+        data.put("serviceAnalyzeList", analyzeDTOs);
+        data.put("total", analyzeDTOs.size());
         return new Result<Map>(SysCodeEnum.OK.getValue(), data);
     }
 

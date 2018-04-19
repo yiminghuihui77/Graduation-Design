@@ -32,17 +32,17 @@ window.Utils = Utils;
 
 
 //根实例
-new Vue({
+/*new Vue({
   el: '#app',
   router,
   components: { ViewPage },
   template : '<view-page></view-page>'
-});
+});*/
 
-/*new Vue({
+new Vue({
   router,
   components : {ViewPage},
   data : {
     eventBus : new Vue()
   }
-}).$mount('#app');*/
+}).$mount('#app');

@@ -28,7 +28,6 @@
 
 <script>
   import Loading from '../pages/Loading'
-  import authService from '../js/login/auth'
     export default {
       name: "login",
       //数据
@@ -80,25 +79,6 @@
             //设置状态为非登录
             this.isLoging = false;
             //向后端发送http请求
-            /*authService.login(this, this.account, this.password)
-              //成功回调
-              .then(function (res) {
-                this.authData = res.data;
-                alert(res.data.status);
-                alert(this.account + '---' + this.password);
-                //登录成功：跳转到主页面
-                if (res.data.code === 0) {
-                  this.$router.push('/helloWorld.html');
-                } else {
-                  //登录失败：跳回到登录界面，并显示错误信息
-
-                }
-              },
-                //失败回调
-              function (res) {
-              alert('访问失败');
-                this.authData = res.data;
-              });*/
             Utils.post('/api/auth.json', {
               account : this.account,
               password : this.password

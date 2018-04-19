@@ -61,7 +61,7 @@
           <p>您确定要删除该客户开发计划?</p>
         </div>
         <div slot="footer">
-          <Button type="error" size="large" long :loading="modal_loading" @click="remove">Delete</Button>
+          <Button type="error" size="large" long  @click="remove">Delete</Button>
         </div>
       </Modal>
 
