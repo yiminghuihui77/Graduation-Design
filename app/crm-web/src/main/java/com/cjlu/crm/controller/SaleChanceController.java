@@ -5,7 +5,6 @@ import com.cjlu.crm.domain.*;
 import com.cjlu.crm.service.CustomerService;
 import com.cjlu.crm.service.ProductService;
 import com.cjlu.crm.service.SaleChanceService;
-import com.sun.org.glassfish.external.statistics.annotations.Reset;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
