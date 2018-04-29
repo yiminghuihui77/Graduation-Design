@@ -53,12 +53,13 @@
       methods : {
         //登录方法
         login : function () {
-          //校验输入合法性
+          Utils.jumpTo('/index.html');
+         /* //校验输入合法性
           if (!this.checkLogin(this.account, this.password)) {
             return;
           }
           // 向后端发送请求，执行路由
-          this.toLogin();
+          this.toLogin();*/
         },
         //检查用户名、密码合法性
         checkLogin : function (act, pwd) {

@@ -9,6 +9,8 @@ import $ from 'jquery'
 import Utils from './libs/Utils'
 import ViewPage from './components/view-page'
 import Routers from './router/routers'
+import LoginPage from './pages/Login'
+
 Vue.config.productionTip = false;
 
 //路由
@@ -32,17 +34,24 @@ window.Utils = Utils;
 
 
 //根实例
-/*new Vue({
+new Vue({
   el: '#app',
   router,
   components: { ViewPage },
   template : '<view-page></view-page>'
-});*/
+});
 
-new Vue({
+/*new Vue({
   router,
   components : {ViewPage},
   data : {
     eventBus : new Vue()
   }
-}).$mount('#app');
+}).$mount('#app');*/
+
+/*new Vue({
+  el: '#app',
+  router,
+  components: { LoginPage },
+  template : '<login-page></login-page>'
+});*/

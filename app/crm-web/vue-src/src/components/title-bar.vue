@@ -2,7 +2,7 @@
 	<div style="min-width: 1200px;">
 		<Menu mode="horizontal" theme="light" active-name="1" class="border-top">
 			<div class="wrapper-header-nav">
-				<a href="/" class="wrapper-header-nav-logo router-link-active">
+				<a href="/" class="wrapper-header-nav-logo router-link-active" :onclick="goHome">
 					<img src="../images/CrmLogo.png">
 				</a>
 				<span class="wrapper-header-nav-title">CRM客户关系管理系统</span>
@@ -70,6 +70,9 @@
 
                 }
             },
+      goHome () {
+              Utils.jumpTo('/index.html')
+      }
 		},
 		mounted : function() {
             this.userName = Cookies.get('user');

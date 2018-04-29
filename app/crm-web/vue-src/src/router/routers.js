@@ -10,6 +10,11 @@ const routers = [
     component : resolve => require(['../pages/Login.vue'], resolve)
   },
   {
+    path : '/index.html',
+    keepAlive : true,
+    component : resolve => require(['../components/view-page.vue'], resolve)
+  },
+  {
     path : '/saleChance.html',
     keepAlive : true,
     component : resolve => require(['../pages/SaleChance.vue'], resolve)

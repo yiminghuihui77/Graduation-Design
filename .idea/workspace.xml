@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7513ed75-14d8-4f44-9809-d94670f9fab9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceAnalyzeDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/pom.xml" afterPath="$PROJECT_DIR$/app/crm-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AnalyzeController.java" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AnalyzeController.java" />
+      <change beforePath="$PROJECT_DIR$/Graduation-Design.iml" afterPath="$PROJECT_DIR$/Graduation-Design.iml" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/crm-web.iml" afterPath="$PROJECT_DIR$/app/crm-web/crm-web.iml" />
       <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/index.html" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/index.html" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/App.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/images/logo.png" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/images/logo.png" />
       <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/main.js" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/main.js" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/CustomerDevelop.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/CustomerDevelop.vue" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/HelloWorld.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/HelloWorld.vue" />
       <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceAnalyze.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceAnalyze.vue" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/router/index.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" />
+      <change beforePath="$PROJECT_DIR$/common/crm-dao/crm-dao.iml" afterPath="$PROJECT_DIR$/common/crm-dao/crm-dao.iml" />
+      <change beforePath="$PROJECT_DIR$/common/crm-service/crm-service.iml" afterPath="$PROJECT_DIR$/common/crm-service/crm-service.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +35,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="e#38#59#0" expanded="true" />
               </folding>
@@ -43,21 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/webpack.config.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="308">
+              <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -68,10 +59,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Vue Single File Component" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -103,14 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/UserService.java" />
-        <option value="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java" />
-        <option value="$PROJECT_DIR$/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmUserMapper.xml" />
-        <option value="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java" />
-        <option value="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmDevelopMapper.java" />
-        <option value="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/DevelopService.java" />
-        <option value="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/DevelopServiceImpl.java" />
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/DevelopController.java" />
         <option value="$PROJECT_DIR$/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmDevelopMapper.xml" />
         <option value="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmActivity.java" />
@@ -146,14 +129,22 @@
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceAnalyzeDTO.java" />
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AnalyzeController.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceAnalyze.vue" />
-        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" />
-        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" />
-        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/main.js" />
-        <option value="$PROJECT_DIR$/app/crm-web/vue-src/index.html" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/CustomerDevelop.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/webpack.config.js" />
         <option value="$PROJECT_DIR$/app/crm-web/pom.xml" />
+        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/SaleChanceController.java" />
+        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/PredictIndexDTO.java" />
+        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/SwitchActionTypeEnum.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/SpringBootHttpController.java" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/index.html" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/main.js" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/config/index.js" />
       </list>
     </option>
   </component>
@@ -264,6 +255,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,45 +339,7 @@
               <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cjlu" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cjlu" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
@@ -390,6 +347,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="crm-web" type="462c0819:PsiDirectoryNode" />
               <item name="vue-src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
@@ -415,7 +373,7 @@
               <item name="crm-web" type="462c0819:PsiDirectoryNode" />
               <item name="vue-src" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
@@ -430,10 +388,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,26 +405,28 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slops-mng" />
+    <property name="last_opened_file_path" value="W:/Vue/Vue_WorkSpace/参考项目/vue_program" />
     <property name="SearchEverywhereHistoryKey" value="ServiceA&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceAnalyzeDTO.java&#10;ServeSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java&#10;CrmServiceMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmServiceMapper.xml&#10;CrmServiceMa&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;Cr&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmService.java&#10;CrmSer&#9;PSI&#9;JAVA://com.cjlu.crm.domain.CrmService&#10;ServeS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java&#10;CrmServiceM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmService&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmServ&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmUser&#9;PSI&#9;JAVA://com.cjlu.crm.domain.CrmUser&#10;CrmCustomer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmCustomer.java&#10;LossSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/LossServiceImpl.java&#10;CrmLoss&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmLoss.java&#10;CrmLossMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmLossMapper.xml&#10;CrmLossMa&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmLossMapper.java&#10;CrmLo&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmLoss.java&#10;C&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmActivity.java&#10;CrmActivityMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmActivityMapper.xml&#10;CrmActivityM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmActivityMapper.java&#10;CrmAc&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmActivity.java&#10;DevelopS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/DevelopServiceImpl.java&#10;CrmDe&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmDevelopMapper.java&#10;CrmDeve&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;CrmDevelopMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmDevelopMapper.xml&#10;CrmDevelopM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmDevelopMapper.java&#10;CrmD&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;sa&#9;null&#9;null&#10;CrmUserMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmUserMapper.xml&#10;CrmU&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java&#10;CrmDevelop&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;DevelopSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/DevelopServiceImpl.java&#10;CustomerS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/CustomerService.java&#10;CrmChance&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmChanceMapper.xml&#10;CrmCustomerMapp&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmCustomerMapper.java&#10;CrmCustomerM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10; CrmCustomer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmCustomer.java&#10;CrmChanceMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmChanceMapper.xml&#10;Crmchance&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmChanceMapper.java&#10;CrmCust&#9;PSI&#9;JAVA://com.cjlu.crm.domain.CrmCustomer&#10;CrmCustomerMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10;CrmuserM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java&#10;CustomerD&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/CustomerDTO.java&#10;CustomerDTO&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/CustomerDTO.java&#10;CrmC&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10;CustomerSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/CustomerService.java&#10;CrmCus&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmCustomerMapper.java&#10;CrmUserM&#9;PSI&#9;JAVA://com.cjlu.crm.dao.CrmUserMapper&#10;SaleChanceIm&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/SaleChanceServiceImpl.java&#10;CrmChanceM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmChanceMapper.java" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path" value="W:/Node.js/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/app/crm-web/vue-src/node_modules/gulp" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src" />
-      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\src\pages" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cjlu.crm.controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\build" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\src\main\resources\public" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\src\main\resources\templates" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\src\main\resources" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src" />
-      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\node_modules\_css-loader@0.28.11@css-loader" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cjlu.crm.domain" />
+      <recent name="com.cjlu.crm.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\src\images" />
+      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src" />
+      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\src\pages" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -718,12 +674,25 @@
       <workItem from="1524055306242" duration="6626000" />
       <workItem from="1524103833227" duration="56000" />
       <workItem from="1524120871552" duration="648000" />
-      <workItem from="1524143399585" duration="6178000" />
+      <workItem from="1524143399585" duration="6467000" />
+      <workItem from="1524187744278" duration="55000" />
+      <workItem from="1524364316185" duration="3341000" />
+      <workItem from="1524382092281" duration="48000" />
+      <workItem from="1524407394604" duration="689000" />
+      <workItem from="1524451158368" duration="19000" />
+      <workItem from="1524622942458" duration="10431000" />
+      <workItem from="1524715198897" duration="1987000" />
+      <workItem from="1524754156350" duration="2261000" />
+      <workItem from="1524792889973" duration="1056000" />
+      <workItem from="1524810233163" duration="1817000" />
+      <workItem from="1524839453394" duration="3163000" />
+      <workItem from="1524879359091" duration="10000" />
+      <workItem from="1524974893274" duration="166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249363000" />
+    <option name="totallyTimeSpent" value="274868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -740,28 +709,28 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38297874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40638298" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40638298" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287234" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27872342" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27765957" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30625" sideWeight="0.5058997" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3453125" sideWeight="0.4941003" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3234375" sideWeight="0.4941003" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38651684" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,146 +741,30 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="47" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>JSONObject.parseObject(params.get(&quot;actionType&quot;), SwitchActionTypeEnum.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSONObject.parseObject(params.get(&quot;dto&quot;), PredictIndexDTO.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(PredictIndexDTO) params.get(&quot;dto&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/ActivityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-          <folding>
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#744#745#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/ActivityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/DevelopController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="91" column="47" lean-forward="false" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmLossMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmLossMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/LossService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/LossServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#673#674#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#835#836#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/LossDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmLoss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/resources/mybatisgenerator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="109" column="47" lean-forward="false" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/util/MybatisPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/LossController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="62" column="74" lean-forward="true" selection-start-line="62" selection-start-column="74" selection-end-line="62" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/CustomerLoss.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
@@ -951,18 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="211" column="38" lean-forward="false" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#article#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#Select#0;n#FormItem#1;n#Form#0;n#Card#0;n#div#0;n#div#0;n#article#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/SaleChanceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,9 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,27 +835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/CustomerInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ActivityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="85" column="40" lean-forward="false" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,15 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AnalyzeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="120" column="30" lean-forward="false" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="136" column="46" lean-forward="true" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,9 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
           <caret line="103" column="26" lean-forward="false" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,68 +881,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#94#115#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/build/webpack.dev.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/App.vue" />
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/router/index.js" />
     <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/CustomerDevelop.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="63" column="49" lean-forward="false" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#navi-bar#0;n#i-col#0;n#Row#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,41 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
           <caret line="441" column="46" lean-forward="true" selection-start-line="441" selection-start-column="46" selection-end-line="441" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="e#38#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="54" column="72" lean-forward="false" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,6 +904,210 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="45" column="54" lean-forward="false" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/CustomerInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122">
+          <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/LossDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/PredictIndexDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/SwitchActionTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="57" column="45" lean-forward="false" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/images/icons.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/libs/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1518">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-879">
+          <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/ActivityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AnalyzeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2251">
+          <caret line="120" column="30" lean-forward="false" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/SaleChanceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="e#38#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/SpringBootHttpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
         </state>
       </provider>
