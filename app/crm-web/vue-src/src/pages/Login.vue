@@ -1,5 +1,5 @@
 <template>
-    <div class="login" id="login">
+    <div class="login" id="login" style="top: 450px">
       <a href="#" class="log-close"><i class="icons close"></i></a>
       <div class="log-bg">
         <div class="log-cloud cloud1"></div>
@@ -11,15 +11,15 @@
         <div class="log-text">{{author}}</div>
       </div>
       <div class="log-email">
+        <span v-if="loginError" style="font-size: medium;color: red">{{loginError}}</span>
+        <span v-if="errorInfo.password" style="font-size: medium;color: red">{{errorInfo.password}}</span>
+        <span v-if="errorInfo.account" style="font-size: medium;color: red">{{errorInfo.account}}</span>
         <div>
           <input type="text" placeholder="Account" :class="'log-input' + (account==''?' log-input-empty':'')" v-model="account">
-          <span v-if="errorInfo.account">{{errorInfo.account}}</span>
         </div>
         <div>
           <input type="password" placeholder="Password" :class="'log-input' + (password==''?' log-input-empty':'')"  v-model="password">
-          <span v-if="errorInfo.password">{{errorInfo.password}}</span>
         </div>
-        {{authData}}
         <a href="#" class="log-btn" @click="login">Login</a>
       </div>
       <Loading v-if="isLoging" marginTop="-30%"></Loading>
@@ -28,6 +28,7 @@
 
 <script>
   import Loading from '../pages/Loading'
+  import Cookies from 'js-cookie'
     export default {
       name: "login",
       //数据
@@ -42,7 +43,7 @@
               account : '',
               password : ''
             },
-            authData : ''
+            loginError : ''
           }
       },
       //组件
@@ -53,14 +54,19 @@
       methods : {
         //登录方法
         login : function () {
-          Utils.jumpTo('/index.html');
-         /* //校验输入合法性
+          //清除所有错误信息
+          this.loginError = '';
+          this.errorInfo.account = '';
+          this.errorInfo.password = '';
+
+          //校验输入合法性
           if (!this.checkLogin(this.account, this.password)) {
             return;
           }
           // 向后端发送请求，执行路由
-          this.toLogin();*/
+          this.toLogin();
         },
+
         //检查用户名、密码合法性
         checkLogin : function (act, pwd) {
           if (!act) {
@@ -74,24 +80,51 @@
           return true;
         },
         toLogin : function () {
+          var me = this;
           //设置状态为正在登录
-          this.isLoging = true;
+          me.isLoging = true;
+          //延时执行,凸显动画效果
           setTimeout(() => {
             //设置状态为非登录
-            this.isLoging = false;
+            me.isLoging = false;
             //向后端发送http请求
             Utils.post('/api/auth.json', {
-              account : this.account,
-              password : this.password
-            }, function (data) {
-              alert(data.status);
-              alert(data.array);
-              Utils.jumpTo('/index.html');
+              account : me.account,
+              password : me.password
+            }, function (d) {
+              if (!d.user) {
+                me.loginError = d;
+                return;
+              }
+
+              me.loginError = '';
+              // me.account = d.user.name;
+              // me.password = d.user.password;
+              Cookies.set('account', d.user.name);
+              Cookies.set('password', d.user.password);
+              Utils.jumpTo('/');
             });
-
-          },1000)
+          }, 2000);
+        },
+        //每次跳转到登录界面时，判断Cookie中是否存在用户信息
+        checkCookie () {
+          if (Cookies.get('account')) {
+            this.$Modal.confirm({
+              title: '登入会话',
+              content: '<p style="font-size: large">您已经登录过，2秒后自动跳转到主界面</p>',
+              loading: true,
+              onOk: () => {
+                setTimeout(() => {
+                  this.$Modal.remove();
+                  Utils.jumpTo('/')
+                }, 2000);
+              }
+            });
+          }
         }
-
+      },
+      mounted : function () {
+        this.checkCookie();
       }
     }
 </script>

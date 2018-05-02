@@ -14,4 +14,5 @@ public interface UserService {
     CrmUser queryUserById(Integer id);
     List<CrmUser> queryAllManagers();
     List<CrmUser> queryAllSaleCharges();
+    CrmUser queryByLogin(String account, String password);
 }

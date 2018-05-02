@@ -7,20 +7,10 @@
 				</a>
 				<span class="wrapper-header-nav-title">CRM客户关系管理系统</span>
 				<div class="wrapper-header-nav-list">
-					<!--<Submenu name="1">-->
-						<!--<template slot="title">-->
-							<!--<Icon type="person"></Icon>-->
-							<!--ShuliData-->
-						<!--</template>-->
-						<!--<Menu-group title="系统设置">-->
-							<!--<Menu-item name="1-1">个人信息</Menu-item>-->
-							<!--<Menu-item name="1-2" @click="logout">退出登录</Menu-item>-->
-						<!--</Menu-group>-->
-					<!--</Submenu>-->
 
 					<Dropdown transfer trigger="click" @on-click="handleClickUserDropdown">
 						<a href="javascript:void(0)">
-							<span class="main-user-name"><Icon type="person"></Icon> {{userName}}({{userUid}})</span>
+							<span class="main-user-name"><Icon type="person"></Icon> {{account}}({{password}})</span>
 							<Icon type="arrow-down-b"></Icon>
 						</a>
 						<DropdownMenu slot="list">
@@ -41,28 +31,29 @@
 		props : {},
 		data() {
 			return {
-			    userName : '',
-				userUid : '',
-				userMail : ''
+			    account : '',
+				password : '',
 			}
 		},
 		computed : {},
 		methods : {
             handleClickUserDropdown (name) {
                 if (name === 'ownSpace') {
-//                    util.openNewPage(this, 'ownspace_index');
-//                    this.$router.push({
-//                        name: 'ownspace_index'
-//                    });
+                  //个人中心
+
                 } else if (name === 'logout') {
+                  //删除cookie
+                  Cookies.remove('account');
+                  Cookies.remove('password');
                     this.$Modal.confirm({
                         title: '登出系统',
-                        content: '<p>确认退出采集服务平台吗？</p>',
+                        content: '<p style="font-size: large">您确认退出CRM服务平台吗？</p>',
                         onOk: () => {
                             // 退出登录
-                            Utils.post('logout.json', {}, function(data) {
+                          /*  Utils.post('/api/logout.json', {}, function(d) {
                                 location.reload();
-                            });
+                            });*/
+                          Utils.jumpTo('/login.html')
                         },
                         onCancel: () => {
                         }
@@ -75,9 +66,8 @@
       }
 		},
 		mounted : function() {
-            this.userName = Cookies.get('user');
-            this.userUid = Cookies.get('uid');
-            this.userMail = Cookies.get('mail');
+      this.account = Cookies.get('account');
+      this.password = Cookies.get('password');
 		},
 		components : {}
 	}

@@ -33,4 +33,13 @@
     from crm_user
     where role_id = 3;
   </select>
+
+  <select id="selectByLogin" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from crm_user
+    where name = #{account, jdbcType=VARCHAR}
+    and password = #{password, jdbcType=VARCHAR}
+  </select>
+
 </mapper>

@@ -7,9 +7,8 @@ import 'iview/dist/styles/iview.css'
 import 'font-awesome/css/font-awesome.min.css'
 import $ from 'jquery'
 import Utils from './libs/Utils'
-import ViewPage from './components/view-page'
 import Routers from './router/routers'
-import LoginPage from './pages/Login'
+import App from './App.vue'
 
 Vue.config.productionTip = false;
 
@@ -38,8 +37,9 @@ window.Utils = Utils;
 new Vue({
   el: '#app',
   router,
-  components: { ViewPage },
-  template : '<view-page></view-page>'
+ /* components: { ViewPage },
+  template : '<view-page></view-page>'*/
+ render : h => h(App)
 });
 
 /*new Vue({

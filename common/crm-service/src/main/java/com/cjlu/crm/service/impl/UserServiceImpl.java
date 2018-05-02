@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService {
     public List<CrmUser> queryAllSaleCharges() {
         return userMapper.selectAllSaleCharges();
     }
+
+    @Override
+    public CrmUser queryByLogin(String account, String password) {
+        return userMapper.selectByLogin(account, password);
+    }
 }

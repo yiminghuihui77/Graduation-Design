@@ -1,6 +1,6 @@
 <template>
 	<div id="viewpage">
-		<title-bar></title-bar>
+		<!--<title-bar></title-bar>-->
 
 		<div class="layout">
 			<div class="mask" id="global-mask" style="display: none;"></div>
@@ -8,7 +8,7 @@
 			<div class="layout-content content-border">
 				<Row>
 					<i-col span="4">
-						<navi-bar id="navibar" style="height:2000px;overflow: scroll;"></navi-bar>
+						<navi-bar id="navibar" style="height:700px;overflow: scroll;"></navi-bar>
 					</i-col>
 					<i-col span="20" class="layout-content-main">
 						<transition name="fade">
@@ -17,8 +17,12 @@
 					</i-col>
 				</Row>
 			</div>
-			<div class="layout-copy">
-				Created by &copy; minghui.y on 2018.3
+			<div class="layout-copy" align="center">
+        <Alert type="success"  show-icon style="height: 40px">
+          <Icon type="ios-lightbulb-outline" slot="icon"></Icon>
+          Created by &copy; minghui.y on 2018.3
+        </Alert>
+
 			</div>
 		</div>
 	</div>

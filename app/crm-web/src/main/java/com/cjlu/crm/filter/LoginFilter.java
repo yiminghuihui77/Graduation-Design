@@ -63,8 +63,8 @@ public class LoginFilter implements Filter {
         }
 
         //拦截的情况：直接重定向到登录界面
-        response.sendRedirect(request.getContextPath() + "/login.html");
-
+//        response.sendRedirect(request.getContextPath() + "/login.html");
+        response.sendRedirect("http://localhost:8090/login.html");
     }
 
     @Override
