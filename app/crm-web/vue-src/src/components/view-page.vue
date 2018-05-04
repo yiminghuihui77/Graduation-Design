@@ -32,7 +32,7 @@
 <script>
     import naviBar from './navi-bar.vue';
     import titleBar from './title-bar.vue';
-
+    import Cookies from 'js-cookie'
 	export default {
 		props : {},
 		data() {
@@ -41,8 +41,16 @@
 			}
 		},
 		computed : {},
-		methods : {},
+		methods : {
+		  //检查用户是否登录，若未登录则跳转到登录界面
+		  checkLogin () {
+        if (!Cookies.get('account')) {
+          Utils.jumpTo('/login.html');
+        }
+      }
+    },
 		mounted : function() {
+		  this.checkLogin();
 			$(window).resize(function() {
                 $('.layout-content-main').height($(window).height() - 150)
                 $('#navibar').height($(window).height() - 150)
@@ -211,4 +219,11 @@
 			stroke: #ffa700
 		}
 	}
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 0s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
 </style>

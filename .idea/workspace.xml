@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7513ed75-14d8-4f44-9809-d94670f9fab9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/App.vue" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/LoginController.java" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/filter/LoginFilter.java" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/filter/LoginFilter.java" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" />
       <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/main.js" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/main.js" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js" />
-      <change beforePath="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java" afterPath="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmUserMapper.xml" afterPath="$PROJECT_DIR$/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmUserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/UserService.java" afterPath="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/common/crm-service/src/main/java/com/cjlu/crm/service/impl/UserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,7 +24,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="-308">
               <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#38#59#0" expanded="true" />
@@ -43,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="59" column="39" lean-forward="false" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+            <state relative-caret-position="352">
+              <caret line="110" column="39" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -59,13 +49,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="title-bar.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue">
+      <file leaf-file-name="ServiceCreated.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+            <state relative-caret-position="218">
+              <caret line="103" column="65" lean-forward="false" selection-start-line="103" selection-start-column="65" selection-end-line="103" selection-end-column="65" />
               <folding>
-                <marker date="1525228903436" expanded="true" signature="1495:1511" ph="..." />
+                <marker date="1525443974807" expanded="true" signature="3465:3481" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,10 +88,11 @@
       <find>showTraces</find>
       <find>modal_loading</find>
       <find>cusName</find>
-      <find>fade</find>
       <find>authData</find>
       <find>js-</find>
       <find>get</find>
+      <find>fade</find>
+      <find>createService</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,7 +119,6 @@
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceDTO.java" />
         <option value="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmService.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/SaleChance.vue" />
-        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceProcess.vue" />
         <option value="$PROJECT_DIR$/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java" />
         <option value="$PROJECT_DIR$/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmServiceMapper.xml" />
@@ -154,7 +144,6 @@
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/HelloWorld.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/config/index.js" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/App.vue" />
-        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/filter/LoginFilter.java" />
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/configurations/WebConfiguration.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/main.js" />
@@ -166,6 +155,8 @@
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" />
+        <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue" />
       </list>
     </option>
   </component>
@@ -276,9 +267,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -520,7 +512,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,21 +536,21 @@
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/app/crm-web/vue-src/node_modules/gulp" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\src\images" />
+      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src" />
+      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\src\pages" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cjlu.crm.domain" />
+      <recent name="com.cjlu.crm.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\build" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\src\main\resources\public" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\src\main\resources\templates" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\src\main\resources" />
       <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cjlu.crm.domain" />
-      <recent name="com.cjlu.crm.controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\src\images" />
-      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src" />
-      <recent name="W:\Git_Repository\Graduation-Design\app\crm-web\vue-src\src\pages" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -824,12 +815,14 @@
       <workItem from="1525053090706" duration="1711000" />
       <workItem from="1525136992166" duration="12435000" />
       <workItem from="1525190584612" duration="3004000" />
-      <workItem from="1525224122942" duration="6082000" />
+      <workItem from="1525224122942" duration="6204000" />
+      <workItem from="1525315680670" duration="777000" />
+      <workItem from="1525393044281" duration="3321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298697000" />
+    <option name="totallyTimeSpent" value="302917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -907,13 +900,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceProcess.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="136" column="46" lean-forward="true" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceAnalyzeDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1084,26 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#navi-bar#0;n#i-col#0;n#Row#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#Alert#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#696#702#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/javax/servlet/http/HttpServletResponse.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1174,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,15 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,17 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#38#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1248,7 +1191,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
+        <state relative-caret-position="1254">
           <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
           <folding>
             <marker date="1525228903436" expanded="true" signature="1495:1511" ph="..." />
@@ -1256,16 +1199,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/router/routers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="58" column="4" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="216" column="5" lean-forward="true" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
+          <folding>
+            <element signature="e#795#832#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#38#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="59" column="39" lean-forward="false" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+        <state relative-caret-position="352">
+          <caret line="110" column="39" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#1274#1312#0" expanded="true" />
             <marker date="1525230186149" expanded="true" signature="3503:3519" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/ServiceCreated.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="103" column="65" lean-forward="false" selection-start-line="103" selection-start-column="65" selection-end-line="103" selection-end-column="65" />
+          <folding>
+            <marker date="1525443974807" expanded="true" signature="3465:3481" ph="..." />
           </folding>
         </state>
       </provider>

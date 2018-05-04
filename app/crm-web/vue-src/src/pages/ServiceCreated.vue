@@ -99,7 +99,10 @@
             custId : me.insertForm.custId
           };
           Utils.post('/api/addService.json', params, function (d) {
-            alert(d);
+            me.$Modal.success({
+              title: '创建服务成功',
+              content: '<p style="font-size: large">服务创建成功！</p>',
+            });
           });
           me.clearForm();
         },
