@@ -15,9 +15,9 @@ Vue.config.productionTip = false;
 //路由
 Vue.use(VueRouter);
 const router = new VueRouter({
+  // base : '/demo/',
   mode : 'history',
   routes : Routers,
-  // base : '/crm-web/'
 });
 window.__router = router;
 
