@@ -234,9 +234,17 @@
             starLevel : me.serviceArr[index].starLevel
           };
           Utils.post('/api/archiveService.json', params, function (d) {
-            alert(d);
+            // alert(d);
           });
-          me.refresh();
+
+          me.$Modal.success({
+            title: '服务归档',
+            content: '<p style="font-size: large">服务归档成功！</p>',
+            onOk : () => {
+              //刷新页面
+              me.refresh();
+            }
+          });
         },
         //只加载被处理过的服务
         loadData () {

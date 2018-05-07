@@ -104,8 +104,8 @@
 			   enableInsert="false">
 			<property name="useActualColumnNames" value="false"/>
 		</table>-->
-		<table tableName="crm_service"
-			   domainObjectName="CrmService"
+		<table tableName="crm_role"
+			   domainObjectName="CrmRole"
 			   enableUpdateByExample="false"
 			   enableUpdateByPrimaryKey="false"
 			   enableDeleteByExample="false"

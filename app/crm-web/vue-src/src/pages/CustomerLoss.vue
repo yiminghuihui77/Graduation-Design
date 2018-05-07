@@ -286,9 +286,17 @@
             id : me.custLossArr[me.rowIndex].id
           };
           Utils.post('/api/deleteLoss.json', params, function (d) {
-            alert(d);
+            // alert(d);
           });
-          me.refresh();
+          me.showDeleteModal = false;
+          me.$Modal.success({
+            title: '客户流失监控',
+            content: '<p style="font-size: large">客户流失记录删除成功！</p>',
+            onOk : () => {
+              //刷新页面
+              me.refresh();
+            }
+          });
         },
         //插入or更新
         saveLoss () {
@@ -302,10 +310,18 @@
               remark : me.insertForm.remark
             };
             Utils.post('/api/addLoss.json', params, function (d) {
-              alert(d);
+              // alert(d);
             });
-            me.custLossArr.push(0);
-            me.refresh();
+            me.showInsertModal = false;
+            me.$Modal.success({
+              title: '客户流失监控',
+              content: '<p style="font-size: large">客户流失记录创建成功！</p>',
+              onOk : () => {
+                //刷新页面
+                me.refresh();
+              }
+            });
+
           } else if (me.modalTitle === '修改客户流失记录') {
             var params = {
               id : me.custLossArr[me.rowIndex].id,
@@ -316,9 +332,17 @@
               remark : me.insertForm.remark
             };
             Utils.post('/api/updateLoss.json', params, function (d) {
-              alert(d);
+              // alert(d);
             });
-            me.refresh();
+            me.showInsertModal = false;
+            me.$Modal.success({
+              title: '客户流失监控',
+              content: '<p style="font-size: large">客户流失记录修改成功！</p>',
+              onOk : () => {
+                //刷新页面
+                me.refresh();
+              }
+            });
           }
 
         },

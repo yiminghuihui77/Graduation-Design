@@ -391,9 +391,16 @@
           status : this.oppositeStatus
         };
         Utils.post('/api/changeStatus.json', params, function (d) {
-
         });
         this.showDeleteModal = false;
+        me.$Modal.success({
+          title: '客户信息管理',
+          content: '<p style="font-size: large">客户状态修改成功！</p>',
+          onOk : () => {
+            //刷新页面
+            me.refresh();
+          }
+        });
       },
       //刷新当前页面
       refresh : function () {
@@ -446,8 +453,11 @@
         Utils.post('/api/fuzzyQueryCustomer.json', params, function (d) {
           me.customerArr = d.customerList;
           me.total = d.total;
-        })
-
+        });
+        //清空搜索框
+        me.searchParam.custName = '';
+        me.searchParam.managerName = '';
+        me.searchParam.status = '';
       },
       //导出数据
       exportData : function (type) {
@@ -500,10 +510,17 @@
             status : me.insertForm.status
           };
           Utils.post('/api/addCustomer.json', params, function (d) {
-            alert(d);
+            // alert(d);
           });
-          me.customerArr.push(0);
           me.showInsertModal = false;
+          me.$Modal.success({
+            title: '客户信息管理',
+            content: '<p style="font-size: large">客户信息创建成功！</p>',
+            onOk : () => {
+              //刷新页面
+              me.refresh();
+            }
+          });
         } else if (this.modalTitle === '修改客户信息') {
           var params = {
             id : me.customerArr[me.rowIndex].id,
@@ -519,9 +536,17 @@
             status : me.insertForm.status
           };
           Utils.post('/api/refreshCustomer.json', params, function (d) {
-            alert(d);
+            // alert(d);
           });
           me.showInsertModal = false;
+          me.$Modal.success({
+            title: '客户信息管理',
+            content: '<p style="font-size: large">客户信息管理修改成功！</p>',
+            onOk : () => {
+              //刷新页面
+              me.refresh();
+            }
+          });
         } else {
           alert('未知操作！');
         }
@@ -542,11 +567,18 @@
           activityDesc : me.insertActivityForm.desc
         };
         Utils.post('/api/addActivity.json', params, function (d) {
-          alert(d);
+          // alert(d);
         });
         //关闭对话框
         me.showInsertActivity = false;
-        me.refresh();
+        me.$Modal.success({
+          title: '交往记录',
+          content: '<p style="font-size: large">交往记录创建成功！</p>',
+          onOk : () => {
+            //刷新页面
+            me.refresh();
+          }
+        });
       }
 
     },

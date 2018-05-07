@@ -98,10 +98,9 @@
               }
 
               me.loginError = '';
-              // me.account = d.user.name;
-              // me.password = d.user.password;
               Cookies.set('account', d.user.name);
               Cookies.set('password', d.user.password);
+              Cookies.set('roleName', d.user.roleName);
               Utils.jumpTo('/');
             });
           }, 2000);

@@ -248,9 +248,17 @@
               chanceDesc : me.insertForm.chanceDesc
             };
             Utils.post('/api/insertChance.json', params, function (d) {
-              alert(d);
+              // alert(d);
             });
-            this.saleChanceArr.push(0);
+            me.showInsertModal = false;
+            me.$Modal.success({
+              title: '销售机会',
+              content: '<p style="font-size: large">销售机会创建成功！</p>',
+              onOk : () => {
+                me.refresh();
+            }
+            });
+
           } else if (me.modalTitle === '更新销售机会') {
             var params = {
               id : me.saleChanceArr[me.rowIndex].id,
@@ -260,19 +268,24 @@
               chanceDesc : me.insertForm.chanceDesc
             };
             Utils.post('/api/updateChance.json', params, function (d) {
-              alert(d);
+              // alert(d)
             });
+            me.showInsertModal = false;
+            me.$Modal.success({
+              title: '销售机会',
+              content: '<p style="font-size: large">销售机会修改成功！</p>',
+              onOk : () => {
+                me.refresh();
+              }
+            });
+
           } else {
             alert('未知操作！');
           }
-          //重新加载数据
-          this.loadData();
-          //关闭对话框
-          this.showInsertModal = false;
+
         },
         //模糊查询
         search : function () {
-          // alert(this.searchParam.custName);
           var me = this;
           me.loading = true;
           Utils.post('/api/fuzzyQuery.json', this.searchParam, function (d) {
@@ -280,6 +293,8 @@
             me.saleChanceArr = d.chanceList;
           });
           me.loading = false;
+          me.searchParam.custName = '';
+          me.searchParam.prodName = '';
         },
         //加载数据
         loadData : function () {
@@ -310,7 +325,7 @@
         show (index) {
           this.$Modal.info({
             title: '销售机会详情',
-            content: `客户姓名：${this.saleChanceArr[index].custId}<br>产品名称：${this.saleChanceArr[index].prodId}<br>机会描述：${this.saleChanceArr[index].chanceDesc}`
+            content: `客户姓名：${this.saleChanceArr[index].custName}<br>产品名称：${this.saleChanceArr[index].prodName}<br>机会描述：${this.saleChanceArr[index].chanceDesc}`
           })
         },
         update (index) {
@@ -324,13 +339,22 @@
           me.showInsertModal = true;
         },
         remove () {
+          var me = this;
           //前端移除
           // this.saleChanceArr.splice(index, 1);
           //后端移除
           Utils.post('/api/deleteChance.json', {id : this.saleChanceArr[this.rowIndex].id}, function (d) {
-            this.loadData();
           });
           this.showDeleteModal = false;
+          me.$Modal.success({
+            title: '销售机会',
+            content: '<p style="font-size: large">销售机会删除成功！</p>',
+            onOk : () => {
+              //刷新页面
+              me.refresh();
+            }
+          });
+
         },
         refresh () {
           location.reload();

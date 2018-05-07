@@ -318,6 +318,10 @@
             me.developArr = d.developList;
             me.total = d.total;
           });
+          //清空搜索框
+
+          me.searchParam.custName = '';
+          me.searchParam.status = '';
         },
         //导出数据
         exportData : function (type) {
@@ -355,12 +359,19 @@
             id : me.developArr[me.rowIndex].id
           };
           Utils.post('/api/removeDevelop.json', params, function (d) {
-            alert(d)
+            // alert(d)
           });
           me.showDeleteModal = false;
-          me.refresh();
+          me.$Modal.success({
+            title: '客户开发计划',
+            content: '<p style="font-size: large">客户开发计划删除成功！</p>',
+            onOk : () => {
+              //刷新页面
+              me.refresh();
+            }
+          });
         },
-        //添加or删除客户开发计划
+        //添加or修改客户开发计划
         saveDevelop () {
           var me = this;
           //插入
@@ -377,11 +388,18 @@
               status : me.insertForm.status
             };
             Utils.post('/api/addDevelop.json', params, function (d) {
-              alert(d);
+              // alert(d);
             });
-            me.developArr.push(0);
             me.showInsertModal = false;
-            me.refresh();
+            me.$Modal.success({
+              title: '客户开发计划',
+              content: '<p style="font-size: large">客户开发计划创建成功！</p>',
+              onOk : () => {
+                //刷新页面
+                me.refresh();
+              }
+            });
+
           } else  if (me.modalTitle === '修改客户开发计划') {
             var params = {
               id : me.developArr[me.rowIndex].id,
@@ -396,10 +414,17 @@
               status : me.insertForm.status
             };
             Utils.post('/api/updateDevelop.json', params, function (d) {
-              alert(d);
+              // alert(d);
             });
             me.showInsertModal = false;
-            me.refresh();
+            me.$Modal.success({
+              title: '客户开发计划',
+              content: '<p style="font-size: large">客户开发计划修改成功！</p>',
+              onOk : () => {
+                //刷新页面
+                me.refresh();
+              }
+            });
           }
         }
       },

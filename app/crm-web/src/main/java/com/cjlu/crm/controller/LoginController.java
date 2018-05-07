@@ -1,9 +1,13 @@
 package com.cjlu.crm.controller;
 
 import com.cjlu.crm.constants.SysCodeEnum;
+import com.cjlu.crm.domain.CrmRole;
 import com.cjlu.crm.domain.CrmUser;
 import com.cjlu.crm.domain.Result;
+import com.cjlu.crm.domain.UserDTO;
+import com.cjlu.crm.service.RoleService;
 import com.cjlu.crm.service.UserService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,6 +30,8 @@ public class LoginController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private RoleService roleService;
 
     @RequestMapping("/auth.json")
     public Result loginAuth(HttpServletRequest request,
@@ -37,10 +43,18 @@ public class LoginController {
         if (user == null) {
             return new Result<>(SysCodeEnum.OK.getValue(), "用户名或密码错误！");
         }
+        //转换为dto
+        UserDTO dto = new UserDTO();
+        BeanUtils.copyProperties(user, dto);
+        //查询角色名
+        CrmRole role = roleService.queryRoleById(user.getRoleId());
+        if (role != null) {
+            dto.setRoleName(role.getRoleName());
+        }
 
         //向前端返回登录结果信息
         Map<Object, Object> data = new HashMap<>();
-        data.put("user", user);
+        data.put("user", dto);
         return new Result<Map>(SysCodeEnum.OK.getValue(), data);
     }
 

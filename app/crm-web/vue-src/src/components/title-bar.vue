@@ -10,7 +10,7 @@
 
 					<Dropdown transfer trigger="click" @on-click="handleClickUserDropdown">
 						<a href="javascript:void(0)">
-							<span class="main-user-name"><Icon type="person"></Icon> {{account}}({{password}})</span>
+							<span class="main-user-name"><Icon type="person"></Icon> {{account}}({{roleName}})</span>
 							<Icon type="arrow-down-b"></Icon>
 						</a>
 						<DropdownMenu slot="list">
@@ -31,28 +31,33 @@
 		props : {},
 		data() {
 			return {
-			    account : '',
+        account : '',
 				password : '',
+        roleName : ''
 			}
 		},
 		computed : {},
 		methods : {
             handleClickUserDropdown (name) {
+              var me = this;
                 if (name === 'ownSpace') {
                   //个人中心
 
                 } else if (name === 'logout') {
-                  //删除cookie
-                  Cookies.remove('account');
-                  Cookies.remove('password');
+
                     this.$Modal.confirm({
                         title: '登出系统',
                         content: '<p style="font-size: large">您确认退出CRM服务平台吗？</p>',
                         onOk: () => {
                             // 退出登录
-                          /*  Utils.post('/api/logout.json', {}, function(d) {
-                                location.reload();
-                            });*/
+                          //删除cookie
+                          Cookies.remove('account');
+                          Cookies.remove('password');
+                          //清空用户信息变量
+                          me.account = '';
+                          me.password = '';
+                          me.roleName = '';
+                          //跳转到登录界面
                           Utils.jumpTo('/login.html')
                         },
                         onCancel: () => {
@@ -62,12 +67,20 @@
                 }
             },
       goHome () {
-              Utils.jumpTo('/index.html')
+              Utils.jumpTo('/index.html');
       }
 		},
 		mounted : function() {
       this.account = Cookies.get('account');
       this.password = Cookies.get('password');
+      this.roleName = Cookies.get('roleName');
+		  //定时从Cookie中获取用户信息
+     /* var me = this;
+      window.setInterval(function (me) {
+        me.account = Cookies.get('account');
+        me.password = Cookies.get('password');
+        alert('aa');
+      }, 1000);*/
 		},
 		components : {}
 	}

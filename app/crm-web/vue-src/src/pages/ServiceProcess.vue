@@ -207,10 +207,17 @@
             remark : me.processResult
           };
           Utils.post('/api/recordProcessResult.json', params, function (d) {
-            alert(d);
+            // alert(d);
           });
           me.showProcessModal = false;
-          me.refresh();
+          me.$Modal.success({
+            title: '服务处理',
+            content: '<p style="font-size: large">服务处理结果记录成功！</p>',
+            onOk : () => {
+              //刷新页面
+              me.refresh();
+            }
+          });
         },
         refresh () {
           location.reload();
@@ -229,6 +236,11 @@
           //清除搜索框
           me.searchParam.custName = '';
           me.searchParam.type = null;
+        },
+
+        //获取按钮状态
+        getButtonStatus(processStatus) {
+
         }
       },
       mounted : function() {
