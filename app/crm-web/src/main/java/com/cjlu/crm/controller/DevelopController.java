@@ -1,10 +1,14 @@
 package com.cjlu.crm.controller;
 
 import com.cjlu.crm.constants.SysCodeEnum;
+import com.cjlu.crm.constants.SystemConstants;
 import com.cjlu.crm.domain.CrmDevelop;
 import com.cjlu.crm.domain.CrmUser;
 import com.cjlu.crm.domain.DevelopDTO;
 import com.cjlu.crm.domain.Result;
+import com.cjlu.crm.notify.NotifyService;
+import com.cjlu.crm.notify.domain.NotifyContent;
+import com.cjlu.crm.notify.domain.NotifyResult;
 import com.cjlu.crm.service.DevelopService;
 import com.cjlu.crm.service.UserService;
 import org.apache.commons.lang.StringUtils;
@@ -36,6 +40,8 @@ public class DevelopController {
     private DevelopService developService;
     @Autowired
     private UserService userService;
+    @Autowired
+    private NotifyService notifyService;
 
     @RequestMapping("/queryAllDevelops.json")
     public Result queryAllDevelops() {
@@ -147,6 +153,22 @@ public class DevelopController {
         if (developService.addDevelop(develop) <= 0) {
             return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "新增客户开发计划失败！");
         }
+        //数据解析
+        CrmUser createUser = userService.queryUserById(develop.getCreateId());
+        String createName = createUser == null ? "error" : createUser.getName();
+        CrmUser dueUser = userService.queryUserById(develop.getDueId());
+        String dueName = dueUser == null ? "error" : dueUser.getName();
+        //每开发一个新客户时，通知到钉钉群
+        String title = "创建客户开发计划通知";
+        String content = "\\n [客户姓名]：" + develop.getCusName() + "\\n [客户电话]：" + develop.getPhone() + "\\n [成功几率]："
+                + develop.getSuccessRate() + "% \\n [创建人]：" + createName + "\\n [负责人]：" + dueName;
+        String sender = "CRM后端系统";
+        NotifyContent notifyContent = new NotifyContent(title, content, sender);
+        NotifyResult notifyResult = notifyService.notifyToDingDing(notifyContent, SystemConstants.DEFAULT_DINGDING_TOKEN);
+        if (!notifyResult.isAllSuccess()) {
+            LOGGER.warn("[创建客户开发计划]钉钉群通知任务失!");
+        }
+
         return new Result<>(SysCodeEnum.OK.getValue(), "添加客户开发计划成功！");
     }
 

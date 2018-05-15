@@ -1,7 +1,11 @@
 package com.cjlu.crm.controller;
 
 import com.cjlu.crm.constants.SysCodeEnum;
+import com.cjlu.crm.constants.SystemConstants;
 import com.cjlu.crm.domain.*;
+import com.cjlu.crm.notify.NotifyService;
+import com.cjlu.crm.notify.domain.NotifyContent;
+import com.cjlu.crm.notify.domain.NotifyResult;
 import com.cjlu.crm.service.CustomerService;
 import com.cjlu.crm.service.ServeService;
 import com.cjlu.crm.service.UserService;
@@ -36,6 +40,8 @@ public class ServiceController {
     private UserService userService;
     @Autowired
     private ServeService serveService;
+    @Autowired
+    private NotifyService notifyService;
 
     @RequestMapping("/loadDataOfCreated.json")
     public Result loadDataOfCreated() {
@@ -60,6 +66,31 @@ public class ServiceController {
         if (serveService.createService(service) <= 0) {
             return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "创建服务失败！");
         }
+        //数据解析
+        String serviceType = null;
+        switch (service.getType()) {
+            case -1 : serviceType = "建议";
+                      break;
+            case 0 : serviceType = "咨询";
+                     break;
+            case 1: serviceType = "投诉";
+                    break;
+            default: serviceType = "error";
+        }
+        CrmCustomer customer = customerService.queryById(service.getCustId());
+        String custName = customer == null ? "error" : customer.getCusName();
+        CrmUser user = userService.queryUserById(service.getDueId());
+        String dueName = user == null ? "error" : user.getName();
+        //每当创建新的服务后，在钉钉群中通知响应负责人
+        String title = "创建服务通知";
+        String content = "\\n [类型]：" + serviceType + "\\n [客户姓名]：" + custName + "\\n [负责经理]：" + dueName + "\\n [服务请求]：" + service.getServiceDesc();
+        String sender = "CRM后端系统";
+        NotifyContent notifyContent = new NotifyContent(title, content, sender);
+        NotifyResult notifyResult = notifyService.notifyToDingDing(notifyContent,SystemConstants.DEFAULT_DINGDING_TOKEN);
+        if (!notifyResult.isAllSuccess()) {
+            LOGGER.warn("[创建服务]钉钉群通知任务失败！");
+        }
+
         return new Result<>(SysCodeEnum.OK.getValue(), "创建服务成功！");
     }
 
