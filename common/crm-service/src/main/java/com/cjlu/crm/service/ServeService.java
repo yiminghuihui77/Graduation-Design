@@ -16,4 +16,5 @@ public interface ServeService {
     int refreshRemarkById(Integer id, String remark);
     List<CrmService> queryArchiveService();
     int archiveService(Integer id, Integer starLevel);
+    CrmService queryById(Integer id);
 }

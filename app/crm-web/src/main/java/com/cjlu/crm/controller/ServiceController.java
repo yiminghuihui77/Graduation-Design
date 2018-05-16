@@ -1,5 +1,7 @@
 package com.cjlu.crm.controller;
 
+import com.alibaba.fastjson.JSONObject;
+import com.cjlu.crm.constants.SmsBizType;
 import com.cjlu.crm.constants.SysCodeEnum;
 import com.cjlu.crm.constants.SystemConstants;
 import com.cjlu.crm.domain.*;
@@ -91,6 +93,21 @@ public class ServiceController {
             LOGGER.warn("[创建服务]钉钉群通知任务失败！");
         }
 
+        //每当创建服务后，短信通知客户
+        //1、获取客户手机号码
+        String phone = customer == null ? null : customer.getPhone();
+        if (StringUtils.isEmpty(phone)) {
+            LOGGER.error("[创建服务短信通知]：获取客户手机号码失败！");
+        } else {
+            Map<String, String> contentMap = new HashMap<>(2);
+            contentMap.put("custName", custName);
+            contentMap.put("dueName", dueName);
+            String smsContent = JSONObject.toJSONString(contentMap);
+            if (!notifyService.notifyToSms(smsContent, phone, SmsBizType.SMS_CREATE_SERVICE)) {
+                LOGGER.error("[创建服务短信通知]：短信通知服务执行失败！");
+            }
+        }
+
         return new Result<>(SysCodeEnum.OK.getValue(), "创建服务成功！");
     }
 
@@ -131,6 +148,20 @@ public class ServiceController {
         //处理
         if (serveService.refreshRemarkById(id, remark) <= 0) {
             return new Result<>(SysCodeEnum.ERR_SYS.getValue(), "记录服务处理结果失败！");
+        }
+
+        //每当处理服务后，短信通知客户
+        CrmService service = serveService.queryById(id);
+        CrmCustomer customer = customerService.queryById(service.getCustId());
+        String phone = customer.getPhone();
+        String custName = customer.getCusName();
+        String result = remark;
+        Map<String, String> contentMap = new HashMap<>(2);
+        contentMap.put("custName", custName);
+        contentMap.put("result", result);
+        String smsContent = JSONObject.toJSONString(contentMap);
+        if (!notifyService.notifyToSms(smsContent, phone, SmsBizType.SMS_PROCESS_SERVICE)) {
+            LOGGER.error("[处理服务短信通知]：短信通知服务执行失败！");
         }
         return new Result<>(SysCodeEnum.OK.getValue(), "记录服务处理结果成功！");
     }

@@ -1,5 +1,6 @@
 package com.cjlu.crm.notify;
 
+import com.cjlu.crm.constants.SmsBizType;
 import com.cjlu.crm.notify.domain.NotifyContent;
 import com.cjlu.crm.notify.domain.NotifyResult;
 
@@ -11,4 +12,6 @@ import com.cjlu.crm.notify.domain.NotifyResult;
  **/
 public interface NotifyService {
     NotifyResult notifyToDingDing(NotifyContent content, String... tokens);
+
+    boolean notifyToSms(String content, String phones, SmsBizType bizType);
 }

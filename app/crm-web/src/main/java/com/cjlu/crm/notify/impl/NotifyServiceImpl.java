@@ -1,9 +1,12 @@
-package com.cjlu.crm.notify.Impl;
+package com.cjlu.crm.notify.impl;
 
+import com.cjlu.crm.constants.SmsBizType;
 import com.cjlu.crm.notify.DingDingRobotTunnel;
 import com.cjlu.crm.notify.NotifyService;
+import com.cjlu.crm.notify.SmsRobotTunnel;
 import com.cjlu.crm.notify.domain.NotifyContent;
 import com.cjlu.crm.notify.domain.NotifyResult;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 /**
@@ -26,5 +29,13 @@ public class NotifyServiceImpl implements NotifyService {
             notifyResult.add(token, DingDingRobotTunnel.send(content, token));
         }
         return notifyResult;
+    }
+
+    @Override
+    public boolean notifyToSms(String content, String phones, SmsBizType bizType) {
+        if (StringUtils.isEmpty(phones) || bizType == null) {
+            return  false;
+        }
+        return SmsRobotTunnel.send(content, phones, bizType);
     }
 }

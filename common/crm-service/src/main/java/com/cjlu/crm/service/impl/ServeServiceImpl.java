@@ -42,4 +42,9 @@ public class ServeServiceImpl implements ServeService {
     public int archiveService(Integer id, Integer starLevel) {
         return serviceMapper.archiveService(id, starLevel);
     }
+
+    @Override
+    public CrmService queryById(Integer id) {
+        return serviceMapper.selectByPrimaryKey(id);
+    }
 }
