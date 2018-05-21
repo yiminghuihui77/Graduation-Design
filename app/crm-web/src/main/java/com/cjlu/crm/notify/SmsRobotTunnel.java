@@ -52,7 +52,7 @@ public class SmsRobotTunnel {
             DefaultProfile.addEndpoint("cn-hangzhou", "cn-hangzhou", PRODUCT, DOMAIN);
             IAcsClient acsClient = new DefaultAcsClient(profile);
 
-            //组装请求对象-具体描述见控制台-文档部分内容
+            //组装请求对象
             SendSmsRequest request = new SendSmsRequest();
             //必填:待发送手机号
             request.setPhoneNumbers(phones);
