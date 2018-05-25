@@ -47,6 +47,13 @@
             <version>1.1.0</version>
         </dependency>
 
+        <!--支付宝第三方登录SDK-->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>3.0.52.ALL</version>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -50,6 +50,7 @@
       }
     },
 		mounted : function() {
+		  //判断用户是否已经登录
 		  this.checkLogin();
 			$(window).resize(function() {
                 $('.layout-content-main').height($(window).height() - 150)

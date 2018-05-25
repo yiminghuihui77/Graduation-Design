@@ -21,6 +21,18 @@
           <input type="password" placeholder="Password" :class="'log-input' + (password==''?' log-input-empty':'')"  v-model="password">
         </div>
         <a href="#" class="log-btn" @click="login">Login</a>
+        <div align="center" style="color: blue;font-size: 15px">
+          第三方登录：
+          <a :href="auth_ip.prod">
+              <img src="../images/alipay.jpg" height="30px" width="30px"/>
+          </a>
+          <a :href="auth_ip.dev">
+            <img src="../images/wechat.jpg" height="30px" width="30px"/>
+          </a>
+          <a :href="auth_ip.dev">
+            <img src="../images/qq.jpg" height="40px" width="40px"/>
+          </a>
+        </div>
       </div>
       <Loading v-if="isLoging" marginTop="-30%"></Loading>
     </div>
@@ -43,7 +55,11 @@
               account : '',
               password : ''
             },
-            loginError : ''
+            loginError : '',
+            auth_ip : {
+              dev : 'https://openauth.alipaydev.com/oauth2/publicAppAuthorize.htm?app_id=2016091400507551&scope=auth_user&redirect_uri=http%3a%2f%2f127.0.0.1%3a8080%2falipay%2fgetAuthCode.json%22',
+              prod : 'https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=2018052260191071&scope=auth_user&redirect_uri=http%3a%2f%2f106.14.149.152%3a8080%2falipay%2fgetAuthInfo.json'
+            }
           }
       },
       //组件

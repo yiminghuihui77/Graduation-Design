@@ -53,6 +53,7 @@
                           //删除cookie
                           Cookies.remove('account');
                           Cookies.remove('password');
+                          Cookies.remove('roleName');
                           //清空用户信息变量
                           me.account = '';
                           me.password = '';
