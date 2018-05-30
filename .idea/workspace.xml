@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7513ed75-14d8-4f44-9809-d94670f9fab9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_3_0_52_ALL.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/alipay/AlipayLoginService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AlipayController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/AlipayUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/images/alipay.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/images/qq.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/images/wechat.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/crm-web.iml" afterPath="$PROJECT_DIR$/app/crm-web/crm-web.iml" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/pom.xml" afterPath="$PROJECT_DIR$/app/crm-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" />
-      <change beforePath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" afterPath="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" />
+      <change beforePath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/alipay/AlipayLoginService.java" afterPath="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/alipay/AlipayLoginService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,44 +24,7 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="AlipayLoginService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/alipay/AlipayLoginService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="80" column="59" lean-forward="false" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlipayController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AlipayController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="title-bar.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-              <folding>
-                <marker date="1527232897868" expanded="true" signature="1428:1444" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -172,10 +123,10 @@
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/alipayController.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/domain/AlipayUser.java" />
-        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/alipay/AlipayLoginService.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/components/view-page.vue" />
         <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AlipayController.java" />
         <option value="$PROJECT_DIR$/app/crm-web/vue-src/src/components/title-bar.vue" />
+        <option value="$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/alipay/AlipayLoginService.java" />
       </list>
     </option>
   </component>
@@ -247,7 +198,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/app/crm-web/vue-src/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="208" />
     <option name="width" value="1528" />
     <option name="height" value="1000" />
@@ -286,6 +237,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -305,125 +259,10 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="crm-web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cjlu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cjlu" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cjlu" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduation-Design" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduation-Design" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crm-web" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,7 +281,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="last_opened_file_path" value="W:/idea/idea_workspace/SMS/java/api_demo" />
-    <property name="SearchEverywhereHistoryKey" value="CrmUser&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmUser.java&#10;CrmServiceMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmServiceMapper.xml&#10;CrmUserMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmUserMapper.xml&#10;ServiceA&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceAnalyzeDTO.java&#10;ServeSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java&#10;CrmServiceMa&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;Cr&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmService.java&#10;CrmSer&#9;PSI&#9;JAVA://com.cjlu.crm.domain.CrmService&#10;ServeS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java&#10;CrmServiceM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmService&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmServ&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmCustomer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmCustomer.java&#10;LossSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/LossServiceImpl.java&#10;CrmLoss&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmLoss.java&#10;CrmLossMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmLossMapper.xml&#10;CrmLossMa&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmLossMapper.java&#10;CrmLo&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmLoss.java&#10;C&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmActivity.java&#10;CrmActivityMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmActivityMapper.xml&#10;CrmActivityM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmActivityMapper.java&#10;CrmAc&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmActivity.java&#10;DevelopS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/DevelopServiceImpl.java&#10;CrmDe&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmDevelopMapper.java&#10;CrmDeve&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;CrmDevelopMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmDevelopMapper.xml&#10;CrmDevelopM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmDevelopMapper.java&#10;CrmD&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;sa&#9;null&#9;null&#10;CrmU&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java&#10;CrmDevelop&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;DevelopSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/DevelopServiceImpl.java&#10;CustomerS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/CustomerService.java&#10;CrmChance&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmChanceMapper.xml&#10;CrmCustomerMapp&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmCustomerMapper.java&#10;CrmCustomerM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10; CrmCustomer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmCustomer.java&#10;CrmChanceMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmChanceMapper.xml&#10;Crmchance&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmChanceMapper.java&#10;CrmCust&#9;PSI&#9;JAVA://com.cjlu.crm.domain.CrmCustomer&#10;CrmCustomerMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10;CrmuserM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java&#10;CustomerD&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/CustomerDTO.java&#10;CustomerDTO&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/CustomerDTO.java&#10;CrmC&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10;CustomerSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/CustomerService.java&#10;CrmCus&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmCustomerMapper.java&#10;CrmUserM&#9;PSI&#9;JAVA://com.cjlu.crm.dao.CrmUserMapper&#10;SaleChanceIm&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/SaleChanceServiceImpl.java&#10;CrmChanceM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmChanceMapper.java" />
+    <property name="SearchEverywhereHistoryKey" value="Login.v&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/vue-src/src/pages/Login.vue&#10;CrmUser&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmUser.java&#10;CrmServiceMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmServiceMapper.xml&#10;CrmUserMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmUserMapper.xml&#10;ServiceA&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/ServiceAnalyzeDTO.java&#10;ServeSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java&#10;CrmServiceMa&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;Cr&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmService.java&#10;CrmSer&#9;PSI&#9;JAVA://com.cjlu.crm.domain.CrmService&#10;ServeS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/ServeService.java&#10;CrmServiceM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmService&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmServ&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmServiceMapper.java&#10;CrmCustomer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmCustomer.java&#10;LossSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/LossServiceImpl.java&#10;CrmLoss&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmLoss.java&#10;CrmLossMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmLossMapper.xml&#10;CrmLossMa&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmLossMapper.java&#10;CrmLo&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmLoss.java&#10;C&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmActivity.java&#10;CrmActivityMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmActivityMapper.xml&#10;CrmActivityM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmActivityMapper.java&#10;CrmAc&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmActivity.java&#10;DevelopS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/DevelopServiceImpl.java&#10;CrmDe&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmDevelopMapper.java&#10;CrmDeve&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;CrmDevelopMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmDevelopMapper.xml&#10;CrmDevelopM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmDevelopMapper.java&#10;CrmD&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;sa&#9;null&#9;null&#10;CrmU&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java&#10;CrmDevelop&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmDevelop.java&#10;DevelopSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/DevelopServiceImpl.java&#10;CustomerS&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/CustomerService.java&#10;CrmChance&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmChanceMapper.xml&#10;CrmCustomerMapp&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmCustomerMapper.java&#10;CrmCustomerM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10; CrmCustomer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/domain/CrmCustomer.java&#10;CrmChanceMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmChanceMapper.xml&#10;Crmchance&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmChanceMapper.java&#10;CrmCust&#9;PSI&#9;JAVA://com.cjlu.crm.domain.CrmCustomer&#10;CrmCustomerMapper&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10;CrmuserM&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmUserMapper.java&#10;CustomerD&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/CustomerDTO.java&#10;CustomerDTO&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/app/crm-web/src/main/java/com/cjlu/crm/domain/CustomerDTO.java&#10;CrmC&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/resources/com/cjlu/crm/mapper/CrmCustomerMapper.xml&#10;CustomerSer&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/CustomerService.java&#10;CrmCus&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-dao/src/main/java/com/cjlu/crm/dao/CrmCustomerMapper.java&#10;CrmUserM&#9;PSI&#9;JAVA://com.cjlu.crm.dao.CrmUserMapper&#10;SaleChanceIm&#9;FILE&#9;file://W:/Git_Repository/Graduation-Design/common/crm-service/src/main/java/com/cjlu/crm/service/impl/SaleChanceServiceImpl.java" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path" value="W:/Node.js/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/app/crm-web/vue-src/node_modules/gulp" />
@@ -809,7 +648,13 @@
       <workItem from="1526973449372" duration="28000" />
       <workItem from="1527048620712" duration="12493000" />
       <workItem from="1527140039293" duration="6031000" />
-      <workItem from="1527219314652" duration="4997000" />
+      <workItem from="1527219314652" duration="8213000" />
+      <workItem from="1527241611830" duration="47000" />
+      <workItem from="1527305788055" duration="630000" />
+      <workItem from="1527484718646" duration="498000" />
+      <workItem from="1527551429789" duration="426000" />
+      <workItem from="1527642656994" duration="20000" />
+      <workItem from="1527642968078" duration="22000" />
     </task>
     <servers />
   </component>
@@ -828,14 +673,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405027000" />
+    <option name="totallyTimeSpent" value="409886000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32340425" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -849,11 +694,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40638298" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40638298" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287234" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24574468" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22021277" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30625" sideWeight="0.5058997" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29479167" sideWeight="0.4941003" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177083" sideWeight="0.4941003" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1173,22 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AnalyzeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1214,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-93">
           <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,18 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="115" column="33" lean-forward="true" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1527151896940" expanded="true" signature="4364:4380" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,7 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1257,29 +1071,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
           <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding>
-            <marker date="1527232897868" expanded="true" signature="1428:1444" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crm-web/vue-src/src/pages/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="72" column="20" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/controller/AlipayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crm-web/src/main/java/com/cjlu/crm/alipay/AlipayLoginService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="80" column="59" lean-forward="false" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="441">
+          <caret line="85" column="63" lean-forward="true" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
